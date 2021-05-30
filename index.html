@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>ESCaPe 2020</title>
+	<title>ESCaPe 2021</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,6 +33,19 @@
 
 <style type="text/css">
 
+   /* color pallete 1
+   
+
+   red
+   white
+   lightskyblue
+   rgb(11, 0, 36)
+   rgb(161, 0, 94)
+   #fb116b
+   royalblue
+   orange
+   
+    */
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
 		color: white;
 		font-weight: bold;
@@ -43,7 +56,7 @@
 	}
 
   .detail-info{
-    border: 2px solid #17a2b8;
+    border: 2px solid lightskyblue;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -58,10 +71,34 @@
   .icon_background{
   	z-index: 1;
     position: absolute;
-    left: 2px;
-    width: 35px;
-    height: 20px;
-    background-color: white;
+    left: -50px;
+	top: -10px;
+    width: 40px;
+    height: 40px;
+	
+	justify-content: center;
+	align-items: center;
+  }
+  .icon_background span{
+	  position: absolute;
+	  z-index: 2;
+	 
+	  justify-content: center;
+	  align-items: center;
+  } 
+  .icon_background span i{
+	justify-content: center;
+	  align-items: center;
+	  color: lightskyblue;
+	z-index: 5;
+  }
+  .icon_background span i h4{
+	  color:red;
+	  font-size: 25px;
+	  text-align: center;
+	  line-height: 40px;
+	  font-weight: bold;
+	  
   }
 
   .blog-entry .meta > div a {
@@ -80,7 +117,7 @@
    }
    .project_name{
 		transition: .3s all ease;
-    	color: #1162fb !important;
+    	color: blue !important;
     	display: block;
     	text-align: initial;
    }
@@ -88,6 +125,436 @@
    .img_project_div{
    		height: auto !important;
    }
+   #categories{
+	   margin-top: 2%;
+	   margin-left: 0%;
+	   margin-right: 0%;
+	   background:rgb(11, 0, 36);/*#ca0b36*/
+	   padding-bottom: 10%;
+	   height:600px;
+	   position: relative;
+	   justify-content: center;	
+	   align-items: center;
+
+   }
+   
+   #schedule{
+	   margin-top: 2%;
+	   margin-left: 5%;
+	   margin-right: 5%;
+	   background: linear-gradient(to right,rgb(0, 0, 0), rgb(161, 0, 94));/*#ca0b36*/
+	   padding-bottom: 5%;   
+   }
+   .cards{
+	   transform-style: preserve-3d;
+	   perspective: 500px;
+	   width: 100%;
+	   height: auto;
+	   position: relative;
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: center;
+   }
+   .sh_cards{
+	   transform-style: preserve-3d;
+	   perspective: 500px;
+	   width: 100%;
+	   height: auto;
+	   position: relative;
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: center;
+   
+   }
+   .card{
+	   width: 250px;
+	   height: 40px;
+	   cursor: pointer;
+	   background: rgba(17, 1, 1, 0.05);
+	   margin: 2%;
+	   border-radius: 10px;
+	   font-size: 18px;
+	   text-align: center;
+	   color: white;
+	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+	   
+   }
+   .active_card{
+		background: rgba(17, 1, 1, 0.25)!important;
+   }
+   .sh_card{
+	   width: 1000px;
+	   height: auto;
+	   cursor: pointer;
+	   background: rgba(255, 255,255, 0.05);
+	   margin: 2%;
+	   padding: 2%;
+	   border-radius: 10px;
+	   font-size: 18px;
+	   color: white;
+	   border: #17a2b8 2px solid;
+	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.479);
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   position: relative;
+   }
+   .sh_img{
+	   width: 20%;
+	   height: auto;
+	   display: cover;
+   }
+   .sh_card_items{
+	   display: flex;
+	   flex-direction: column;
+	   flex-wrap: wrap;
+	   padding: 3%;
+	   
+   }
+   .card:hover{
+	   transform: scale(1.1);
+	   transition: 1.6s all;
+	   
+   }
+   .card_container{
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: center;
+	   overflow: hidden;
+   }
+   /* .card_container::before, .card_container::after{
+	   content: "";
+	   position: absolute;
+	   right: 0;
+	   left: 0;
+	   height: 50px;
+	   bottom: 25px;
+	   background: radial-gradient(closest-side,#fff, #fff 50%,transparent 50%);
+	   background-size: 50px 50px;
+	   background-position: 0 25px;
+	   background-repeat: repeat-x;
+	  
+   }
+   .card_container::after{
+	   bottom: -25px;
+	   background: radial-gradient(closest-side,transparent,transparent 50%, #fff 50%);
+	   background-size: 50px 50px;
+	   background-position: 25px -25px;
+	   background-repeat: repeat-x;
+   } */
+   @keyframes wave {
+	   to{
+		   transform: translateX(50px);
+	   }
+   }
+   @keyframes fadeIn {
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+   .categoryCard{
+	   width: 100%;
+	   background: url('img/sample/embedded.png');
+	   background-repeat: no-repeat;
+	   height: 100%;
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+	   border-bottom-right-radius: 10px;
+	   border-top-right-radius: 10px;
+   }
+   .area{
+	    background-color:transparent;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+   }
+   /* .boxes{
+	   width: 100%;
+	   height: 100%;
+	   position: absolute;
+	   overflow: hidden;
+	   top: 0;
+	   left: 0;
+   }
+   .boxes li{
+	   position: absolute;
+	   display: block;
+	   list-style: none;
+	   width: 20px;
+	   height: 20px;
+	   background: linear-gradient(rgb(38, 6, 180),rgb(51, 153, 131));
+	   animation: animate 17s linear infinite;
+	   bottom: -30px;
+	   border-radius: 10px;
+   } 
+    .boxes li:nth-child(1){
+		left: 30%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 0s;
+
+	}
+	.boxes li:nth-child(2){
+		left: 69%;
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		animation-delay: 3s;
+		animation-duration: 30s;
+	}
+	.boxes li:nth-child(3){
+		left: 86%;
+		width: 15px;
+		height: 15px;
+		border-radius: 7.5px;
+		animation-delay: 2s;
+		animation-duration: 15s;
+	}
+	.boxes li:nth-child(4){
+		left: 57%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 2s;
+		animation-duration: 25s;
+	}
+	.boxes li:nth-child(5){
+		left: 15%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 4s;
+		animation-duration: 17s;
+	}
+	.boxes li:nth-child(6){
+		left: 85%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 4s;
+		animation-duration: 30s;
+	}
+	.boxes li:nth-child(7){
+		left: 48%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 4s;
+		animation-duration: 15s;
+	}
+	.boxes li:nth-child(8){
+		left: 33%;
+		width: 20px;
+		height: 20px;
+		animation-delay: 4s;
+		animation-duration: 30s;
+	}
+	@keyframes animate {
+		from{
+			transform: translateY(0) rotate(0deg);
+			opacity: 1;
+		}to{
+			transform: translateY(-300px) rotate(360deg);
+			opacity: 0;
+		}
+	} */
+	.leftdiv{
+		background-color:royalblue;
+		width: 50%;
+		height: 100%;
+		left: 0;
+		position: absolute;
+	}
+	.rightdiv{
+		background-color: #fb116b;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+		position: absolute;
+	}
+   .inactive{
+	   display: none;
+   }
+
+   .active{
+	   display: flex;
+	  
+   }
+   
+   .topic{
+	   background-color:mediumvioletred;
+	   width: 100%;
+	   justify-content: center;
+	   align-items: center;
+	   
+   }
+   .topic h2{
+	   height: 50px;
+	   text-align: center;
+	   line-height: 50px;
+	   font-size: 22px;
+	   font-weight: bolder;
+	   color: #fff;
+   }
+   .drawer{
+	   width: 5%;
+	   height: 300px;
+	   background-color: blue;
+	   cursor: pointer;
+	   color: #fff;
+	   text-align: center;
+	   line-height: 300px;
+   }
+   .banner_content{
+		width: 100%;
+		height: 90%;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-top: 5%;
+		color: yellow;
+		justify-content: center;
+		
+   }
+   .project_cards{
+	   background-color: #fb116b;
+	   color: #fff;
+	   width: 90%;
+	   height: auto;
+	   border-radius: 10px;
+	   box-sizing: border-box;
+	   box-shadow:0 5px 10px #000 ;
+	   cursor: pointer;
+	   position: relative;
+	   transition: 4s;
+   }
+   .project_title{
+	   position: relative;
+	   height: 50px;
+	   line-height: 50px;
+   }
+   .project_title h4{
+		margin-left: 30px;
+		color: #fff;
+		line-height: 50px;
+   }
+   .project_title .down{
+	   position: absolute;
+	   width: 100%;
+	   top: 50%;
+	   justify-content: center;
+	   align-items: center;
+	   background-color: rgb(110, 224, 3);
+   }
+   .project_title .down i{
+	   color: #fff;
+   }
+   .pro_body{
+	   position: relative;
+	   background-color: #ec90e0;
+	   transition: 4s;
+	   display: none;
+	   padding: 5%;
+	   border-radius: 10px;
+	   overflow-y: auto;
+	   justify-content: center;
+   }
+   .pro_body p{
+	   position: absolute;
+	   left: 50%;
+	   display: block;
+	   top: 5%;
+	   padding: 0;
+	   margin: 0;
+   }
+   .proimg{
+	   position: relative;
+	   width: 40%;
+	   object-fit: cover;
+   }
+   .visible{
+	   display: flex;
+	   flex-direction: column;
+	   flex-wrap: wrap;
+   }
+   .cardimg{
+	   width: 100%;
+	   height: 85%;
+   }
+
+   /* overview styles*/
+   #about{
+	   background-color: magenta;
+	   border: crimson solid 5px;
+	   margin: 10px;
+	   box-sizing: border-box;
+	   box-shadow: 0 5px 10px #ec90e0;
+   }
+	#textdiv{
+	   background-color: darkslateblue;
+	   padding: 20px;
+	   position: relative;
+	   transition: 1s all ease;
+	   animation: borderAnimation;
+    }
+	#textdiv::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-bottom: 3px solid transparent;
+		border-left: 3px solid transparent;
+		transition: 2s all ease;
+	}
+	
+    #textdiv::after{
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		border-right: 3px solid transparent;
+		border-top: 3px solid transparent;
+		transition: 2s all ease;
+	}
+	#textdiv:hover::after,
+	#textdiv:hover::before
+	{
+		border-color:orangered;
+		width: 100%;
+		height: 100%;
+	}
+
+	#overviewimg{
+		width: 40%;
+		height: 40%;
+		margin-top: 10%;
+	}
+	.timebox{
+		position: absolute;
+		right: 30px;
+		top: 10px;
+		width: 180px;
+		height: 30px;
+		border-radius: 5px;
+		border: #ec90e0 2px solid;
+		background-color: aqua;
+		font-size: 14px;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		line-height: 30px;
+		cursor: default;
+	}
 
 </style>
 
@@ -174,18 +641,25 @@
 </div>
 
 <!--about-->
-<section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
 
-	<div class="container">
+<section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
+	
+	<div class="container" id="overview_div">
 		<div class="row no-gutters">
-		<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/home/overview.jpg);">
-		</div>
-		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
+		<img src="img/home/overview.jpg" id="overviewimg">
+		<div class="col-md-7 wrap-about py-md-5 ftco-animate" >
 		<div class="heading-section mb-5 pt-5 pl-md-5">
 		<div class="pr-md-5 mr-md-5">
-		<h2 class="mb-4">Overview</h2>
+		<h2 class="mb-4" style="color:red">Overview</h2>
 		</div>
-		<p style="text-align: justify;">EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. It presents you with the research projects of the undergraduates of the Department of Computer Engineering. ESCaPe 2020 is the 5th symposium that is organized by the department and this time the symposium is open for a broader audience and aims to build a platform for the undergraduates to present their research ideas to the industry and academic community.</p>
+		
+		<p style="text-align: justify; color: rgb(255, 255, 255);font-size: 18px;" id="textdiv">
+			
+			EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. 
+			It presents you with the research projects of the undergraduates of the Department of Computer 
+			Engineering. ESCaPe 2021 is the 5th symposium that is organized by the department and this time 
+			symposium is open for a broader audience and aims to build a platform for the undergraduates to 
+			present their research ideas to the industry and academic community.</p>
 
 		</div>
 		</div>
@@ -193,16 +667,320 @@
 	</div>
 
 </section>
+<section id="categories" class="ftco-section ftco-no-pt ftco-no-pb">
+	<div class="area">
+		<!-- <ul class="boxes">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul> -->
+	</div>
+	<div class="card_container">
+		<div class="leftdiv">
+			<span class="categoryCard active ftco-animate" id="banner1">
+				<!-- <div class="drawer" id="back1"><i class="fa fa-caret-left"></i></div> -->
+				<div class="topic fadeInUp"><h2>Embedded Systems</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/embedded.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="embbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+							<!-- <div class="dow"><i class="fa fa-caret-down"></i></div> -->
+							
+						</div>
+						<div class="pro_body" id="emb1">
+							<img src="img/project_1/main.jpg" class="proimg">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+							</p>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="embbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="emb2">
+							<img src="img/project_1/main.jpg" class="proimg">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+							</p>	
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="embbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="emb3">
+							<img src="img/project_1/main.jpg" class="proimg">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+							</p>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="embbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body" id="emb4">
+							<img src="img/project_1/main.jpg" class="proimg">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+							</p>
+						</div>					
+					</div>
+				</div>
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner2">
+				<!-- <div class="drawer" id="back2"><i class="fa fa-caret-left"></i></div> -->
+				<div class="topic fadeInUp"><h2>Software</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/iot.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="softbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="soft1">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="soft2">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="soft3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body" id="soft4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+				
+				</div>
+	
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner3">
+				<!-- <div class="drawer" id="back3"><i class="fa fa-caret-left"></i></div> -->
+				<div class="topic fadeInUp"><h2>Data & Vision</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/brain.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="dv1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="dv2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="dv3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body" id="dv4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+				</div>
+	
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner4">
+				<!-- <div class="drawer" id="back4"><i class="fa fa-caret-left"></i></div> -->
+				<div class="topic fadeInUp"><h2>Networking</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/network.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="netbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="net1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="net2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body" id="net3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body" id="net4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.</div>
+					
+					</div>
+				</div>
+	
+			</span>
+		</div>
+		<div class="rightdiv">
+			<div class="col-md-7 wrap-about py-md-3 ftco-animate">
+				<div class="heading-section">
+					<div class="pr-md-5">
+						<h2 class="mb-4 fadeInUp ftco-animate" style="color: orange; margin-left: 20%;">Categories</h2>
+					</div>	
+				</div>
+				<div class="category_desc" style="margin-left: 20%; color: #fff;">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt impedit, pariatur, eum necessitatibus numquam at ex labore soluta architecto unde doloribus libero eveniet repellendus culpa nisi blanditiis assumenda error sit.</p>
+
+				</div>
+			</div>
+
+			<div class="cards active" id="cardV">
+				<span class="card active active_card" id="category1">Embedded Systems
+	
+				</span>
+				<span class="card active " id="category2">Software
+					
+				</span>
+				<span class="card active " id="category3">Data & Vision
+					
+				</span>
+				<span class="card active " id="category4">Networking
+					
+				</span>
+			</div>
+		</div>
+<!-- 		
+		<div class="cards active" id="cardV">
+			<span class="card active" id="category1">Embedded Systems
+				<img src="img/sample/embedded.png" class="cardimg">
+			</span>
+			<span class="card active" id="category2">Software
+				<img src="img/sample/iot.png" class="cardimg">
+			</span>
+			<span class="card active" id="category3">Data & Vision
+				<img src="img/home/bg_1.jpg" class="cardimg">
+			</span>
+			<span class="card active" id="category4">Networking
+				<img src="img/home/bg_11.jpg" class="cardimg">
+			</span>
+		</div> -->
+		
+	</div>
+</section>
 
 <!--schedule-->
 <section id="schedule" class="ftco-section">
 
 	<div class="container">
-	<div class="row justify-content-center mb-5">
-		<div class="col-md-7 text-center heading-section ftco-animate">
-		<h2 class="mb-3">ESCaPe 2020 Schedule</h2>
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+			<h2 class="mb-3" style="color:orange; font-weight: bold;">ESCaPe 2021 Schedule</h2>
+			</div>
 		</div>
-	</div>
+		<div class="card_container">
+			<div class="sh_cards">
+				<div class="sh_card">
+					<h3 style="color: #fff;">Commencement of ESCaPe 2021</h3>
+					<span class="timebox">08:00 am - 08:30 am</span>
+					<div class="icon_background">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa-stack-1x"><h4>1</h4></i>
+						</span>
+						
+					</div>
+				</div>
+				<div class="sh_card">
+					
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>2</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+						
+					</div>
+					<span class="timebox">08:00 am - 08:30 am</span>
+				</div>
+				<div class="sh_card">
+					
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>3</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+						<span class="timebox">08:00 am - 08:30 am</span>
+					</div>
+					
+				</div>
+				<div class="sh_card">
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>4</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+
+<!-- 	
 	<div class="ftco-schedule">
 	<div class="row">
 	<div class="col-md-1 nav-link-wrap text-center text-md-right"></div>
@@ -210,7 +988,7 @@
 		<div class="tab-content" id="v-pills-tabContent">
 		<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
 		<div class="icon_background">
-            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #17a2b8;"></i>
+            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #3a17b8;"></i>
         </div>
 		<div class="speaker-wrap ftco-animate d-md-flex detail-info">
 			<div class="text">
@@ -220,7 +998,7 @@
 		</div>
 
 		<div class="icon_background">
-            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #17a2b8;"></i>
+            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #3a17b8;"></i>
         </div>
 		<div class="speaker-wrap ftco-animate d-md-flex detail-info">
 			<div class="img speaker-img img_project_div" style="background-image: url(img/home/projects_2.jpg);"></div>
@@ -320,7 +1098,7 @@
                 	<a class="project_name"><b>12: </b> Stock Market Prediction using SVM, LSTM and Linear Regression</a>
                 </li>
                 <li>
-                	<a class="project_name"><b>13: </b> Real Time Dynamic Object Tracking with a Pan and Tilt Camera Setup</a>
+                	<a class="project_name"><b>13: </b> Real Time Dynamic Object Tracking with a Pan and Tilt Camera Setup</a> -->
 <!--                 	<span class="time author_name">
                 		<a class="badge badge-dark time_box"><i class="fa fa-user" aria-hidden="true"></i> Chamara Gunarathne</a>
                 	</span>
@@ -330,7 +1108,7 @@
                 	<span class="time author_name">
                 		<a class="badge badge-dark time_box"><i class="fa fa-user" aria-hidden="true"></i> Chamara Gunarathne</a>
                 	</span> -->
-                </li>
+                <!-- </li>
               </ul>
 			</div>
 		</div>
@@ -343,7 +1121,7 @@
 			<h2><a>Awards Ceremony and the Conclusion of ESCaPe 2020</a></h2>
 			<span class="time"><a class="badge badge-info time_box">2:15 pm - 2:30 pm</a></span>
 			</div>
-		</div>
+		</div> -->
 
 <!-- 		<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
 		<div class="speaker-wrap ftco-animate d-md-flex">
@@ -430,11 +1208,11 @@
 		</div>
 		</div>
 		</div> -->
-		</div>
+		<!-- </div>
 	</div>
 	<div class="col-md-1 nav-link-wrap text-center text-md-right"></div>
 	</div>
-	</div>
+	</div> -->
 	</div>
 
 </section>
@@ -957,4 +1735,240 @@
 		$('.reg_link a').css('color','white');
 	});
 
+	let card= document.getElementById('cardV');
+	let card1= document.getElementById('category1');
+	let card2= document.getElementById('category2');
+	let card3= document.getElementById('category3');
+	let card4= document.getElementById('category4');
+
+	let embbtn1 = document.getElementById('embbtn1');
+	let embbtn2 = document.getElementById('embbtn2');
+	let embbtn3 = document.getElementById('embbtn3');
+	let embbtn4 = document.getElementById('embbtn4');
+
+	let emb1 = document.getElementById('emb1');
+	let emb2 = document.getElementById('emb2');
+	let emb3 = document.getElementById('emb3');
+	let emb4 = document.getElementById('emb4');
+
+	let softbtn1 = document.getElementById('softbtn1');
+	let softbtn2 = document.getElementById('softbtn2');
+	let softbtn3 = document.getElementById('softbtn3');
+	let softbtn4 = document.getElementById('softbtn4');
+
+	let soft1 = document.getElementById('soft1');
+	let soft2 = document.getElementById('soft2');
+	let soft3 = document.getElementById('soft3');
+	let soft4 = document.getElementById('soft4');
+
+	let dvbtn1 = document.getElementById('dvbtn1');
+	let dvbtn2 = document.getElementById('dvbtn2');
+	let dvbtn3 = document.getElementById('dvbtn3');
+	let dvbtn4 = document.getElementById('dvbtn4');
+
+	let dv1 = document.getElementById('dv1');
+	let dv2 = document.getElementById('dv2');
+	let dv3 = document.getElementById('dv3');
+	let dv4 = document.getElementById('dv4');
+
+	let netbtn1 = document.getElementById('netbtn1');
+	let netbtn2 = document.getElementById('netbtn2');
+	let netbtn3 = document.getElementById('netbtn3');
+	let netbtn4 = document.getElementById('netbtn4');
+
+	let net1 = document.getElementById('net1');
+	let net2 = document.getElementById('net2');
+	let net3 = document.getElementById('net3');
+	let net4 = document.getElementById('net4');
+
+	let banner1= document.getElementById('banner1');
+	let banner2= document.getElementById('banner2');
+	let banner3= document.getElementById('banner3');
+	let banner4= document.getElementById('banner4');
+
+	card1.addEventListener('click', ()=>{
+		banner1.classList.replace('inactive', 'active');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('active', 'inactive');
+		card1.classList.add('active_card');
+		card2.classList.remove('active_card');
+		card3.classList.remove('active_card');
+		card4.classList.remove('active_card');
+		emb1.classList.remove('visible');
+		emb2.classList.remove('visible');
+		emb3.classList.remove('visible');
+		emb4.classList.remove('visible');
+	})
+	card2.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('inactive', 'active');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('active', 'inactive');
+		card1.classList.remove('active_card');
+		card2.classList.add('active_card');
+		card3.classList.remove('active_card');
+		card4.classList.remove('active_card');
+		soft1.classList.remove('visible');
+		soft2.classList.remove('visible');
+		soft3.classList.remove('visible');
+		soft4.classList.remove('visible');
+	})
+	card3.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('inactive', 'active');
+		banner4.classList.replace('active', 'inactive');
+		card1.classList.remove('active_card');
+		card2.classList.remove('active_card');
+		card3.classList.add('active_card');
+		card4.classList.remove('active_card');
+		dv1.classList.remove('visible');
+		dv2.classList.remove('visible');
+		dv3.classList.remove('visible');
+		dv4.classList.remove('visible');
+	})
+	card4.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('inactive', 'active');
+		card1.classList.remove('active_card');
+		card2.classList.remove('active_card');
+		card3.classList.remove('active_card');
+		card4.classList.add('active_card');
+		net1.classList.remove('visible');
+		net2.classList.remove('visible');
+		net3.classList.remove('visible');
+		net4.classList.remove('visible');
+	})
+
+	embbtn1.addEventListener('click', ()=>{
+	
+		emb1.classList.toggle('visible');
+		emb2.classList.remove('visible');
+		emb3.classList.remove('visible');
+		emb4.classList.remove('visible');
+		
+	})
+	embbtn2.addEventListener('click', ()=>{
+		emb1.classList.remove('visible');
+		emb2.classList.toggle('visible');
+		emb3.classList.remove('visible');
+		emb4.classList.remove('visible');
+
+		
+	})
+	embbtn3.addEventListener('click', ()=>{
+		emb1.classList.remove('visible');
+		emb2.classList.remove('visible');
+		emb3.classList.toggle('visible');
+		emb4.classList.remove('visible');
+
+		
+	})
+	embbtn4.addEventListener('click', ()=>{
+		emb1.classList.remove('visible');
+		emb2.classList.remove('visible');
+		emb3.classList.remove('visible');
+		emb4.classList.toggle('visible');
+
+		
+	})
+	softbtn1.addEventListener('click', ()=>{
+		
+		soft1.classList.toggle('visible');
+		soft2.classList.remove('visible');
+		soft3.classList.remove('visible');
+		soft4.classList.remove('visible');
+		
+	})
+	softbtn2.addEventListener('click', ()=>{
+		soft1.classList.remove('visible');
+		soft2.classList.toggle('visible');
+		soft3.classList.remove('visible');
+		soft4.classList.remove('visible');
+
+		
+	})
+	softbtn3.addEventListener('click', ()=>{
+		soft1.classList.remove('visible');
+		soft2.classList.remove('visible');
+		soft3.classList.toggle('visible');
+		soft4.classList.remove('visible');
+
+		
+	})
+	softbtn4.addEventListener('click', ()=>{
+		soft1.classList.remove('visible');
+		soft2.classList.remove('visible');
+		soft3.classList.remove('visible');
+		soft4.classList.toggle('visible');
+
+		
+	})
+	dvbtn1.addEventListener('click', ()=>{
+	
+		dv1.classList.toggle('visible');
+		dv2.classList.remove('visible');
+		dv3.classList.remove('visible');
+		dv4.classList.remove('visible');
+		
+	})
+	dvbtn2.addEventListener('click', ()=>{
+		dv1.classList.remove('visible');
+		dv2.classList.toggle('visible');
+		dv3.classList.remove('visible');
+		dv4.classList.remove('visible');
+
+		
+	})
+	dvbtn3.addEventListener('click', ()=>{
+		dv1.classList.remove('visible');
+		dv2.classList.remove('visible');
+		dv3.classList.toggle('visible');
+		dv4.classList.remove('visible');
+
+		
+	})
+	dvbtn4.addEventListener('click', ()=>{
+		dv1.classList.remove('visible');
+		dv2.classList.remove('visible');
+		dv3.classList.remove('visible');
+		dv4.classList.toggle('visible');
+
+		
+	})
+	netbtn1.addEventListener('click', ()=>{
+		
+		net1.classList.toggle('visible');
+		net2.classList.remove('visible');
+		net3.classList.remove('visible');
+		net4.classList.remove('visible');
+		
+	})
+	netbtn2.addEventListener('click', ()=>{
+		net1.classList.remove('visible');
+		net2.classList.toggle('visible');
+		net3.classList.remove('visible');
+		net4.classList.remove('visible');
+
+		
+	})
+	netbtn3.addEventListener('click', ()=>{
+		net1.classList.remove('visible');
+		net2.classList.remove('visible');
+		net3.classList.toggle('visible');
+		net4.classList.remove('visible');
+
+		
+	})
+	netbtn4.addEventListener('click', ()=>{
+		net1.classList.remove('visible');
+		net2.classList.remove('visible');
+		net3.classList.remove('visible');
+		net4.classList.toggle('visible');
+
+		
+})
 </script>
