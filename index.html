@@ -33,19 +33,7 @@
 
 <style type="text/css">
 
-   /* color pallete 1
-   
 
-   red
-   white
-   lightskyblue
-   rgb(11, 0, 36)
-   rgb(161, 0, 94)
-   #fb116b
-   royalblue
-   orange
-   
-    */
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
 		color: white;
 		font-weight: bold;
@@ -108,9 +96,7 @@
     color: white;
    }
 
-   .time_box{
-   	color: white !important;
-   }
+   
 
    .author_name{
    	display: inline !important;
@@ -125,437 +111,7 @@
    .img_project_div{
    		height: auto !important;
    }
-   #categories{
-	   margin-top: 2%;
-	   margin-left: 0%;
-	   margin-right: 0%;
-	   background:rgb(11, 0, 36);/*#ca0b36*/
-	   padding-bottom: 10%;
-	   height:600px;
-	   position: relative;
-	   justify-content: center;	
-	   align-items: center;
-
-   }
-   
-   #schedule{
-	   margin-top: 2%;
-	   margin-left: 5%;
-	   margin-right: 5%;
-	   background: linear-gradient(to right,rgb(0, 0, 0), rgb(161, 0, 94));/*#ca0b36*/
-	   padding-bottom: 5%;   
-   }
-   .cards{
-	   transform-style: preserve-3d;
-	   perspective: 500px;
-	   width: 100%;
-	   height: auto;
-	   position: relative;
-	   display: flex;
-	   flex-direction: row;
-	   flex-wrap: wrap;
-	   justify-content: center;
-   }
-   .sh_cards{
-	   transform-style: preserve-3d;
-	   perspective: 500px;
-	   width: 100%;
-	   height: auto;
-	   position: relative;
-	   display: flex;
-	   flex-direction: row;
-	   flex-wrap: wrap;
-	   justify-content: center;
-   
-   }
-   .card{
-	   width: 250px;
-	   height: 40px;
-	   cursor: pointer;
-	   background: rgba(17, 1, 1, 0.05);
-	   margin: 2%;
-	   border-radius: 10px;
-	   font-size: 18px;
-	   text-align: center;
-	   color: white;
-	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
-	   
-   }
-   .active_card{
-		background: rgba(17, 1, 1, 0.25)!important;
-   }
-   .sh_card{
-	   width: 1000px;
-	   height: auto;
-	   cursor: pointer;
-	   background: rgba(255, 255,255, 0.05);
-	   margin: 2%;
-	   padding: 2%;
-	   border-radius: 10px;
-	   font-size: 18px;
-	   color: white;
-	   border: #17a2b8 2px solid;
-	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.479);
-	   display: flex;
-	   flex-direction: row;
-	   flex-wrap: wrap;
-	   position: relative;
-   }
-   .sh_img{
-	   width: 20%;
-	   height: auto;
-	   display: cover;
-   }
-   .sh_card_items{
-	   display: flex;
-	   flex-direction: column;
-	   flex-wrap: wrap;
-	   padding: 3%;
-	   
-   }
-   .card:hover{
-	   transform: scale(1.1);
-	   transition: 1.6s all;
-	   
-   }
-   .card_container{
-	   display: flex;
-	   flex-direction: row;
-	   flex-wrap: wrap;
-	   justify-content: center;
-	   overflow: hidden;
-   }
-   /* .card_container::before, .card_container::after{
-	   content: "";
-	   position: absolute;
-	   right: 0;
-	   left: 0;
-	   height: 50px;
-	   bottom: 25px;
-	   background: radial-gradient(closest-side,#fff, #fff 50%,transparent 50%);
-	   background-size: 50px 50px;
-	   background-position: 0 25px;
-	   background-repeat: repeat-x;
-	  
-   }
-   .card_container::after{
-	   bottom: -25px;
-	   background: radial-gradient(closest-side,transparent,transparent 50%, #fff 50%);
-	   background-size: 50px 50px;
-	   background-position: 25px -25px;
-	   background-repeat: repeat-x;
-   } */
-   @keyframes wave {
-	   to{
-		   transform: translateX(50px);
-	   }
-   }
-   @keyframes fadeIn {
-		from{
-			opacity: 0;
-		}
-		to{
-			opacity: 1;
-		}
-	}
-   .categoryCard{
-	   width: 100%;
-	   background: url('img/sample/embedded.png');
-	   background-repeat: no-repeat;
-	   height: 100%;
-	   display: flex;
-	   flex-direction: row;
-	   flex-wrap: wrap;
-	   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
-	   border-bottom-right-radius: 10px;
-	   border-top-right-radius: 10px;
-   }
-   .area{
-	    background-color:transparent;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-   }
-   /* .boxes{
-	   width: 100%;
-	   height: 100%;
-	   position: absolute;
-	   overflow: hidden;
-	   top: 0;
-	   left: 0;
-   }
-   .boxes li{
-	   position: absolute;
-	   display: block;
-	   list-style: none;
-	   width: 20px;
-	   height: 20px;
-	   background: linear-gradient(rgb(38, 6, 180),rgb(51, 153, 131));
-	   animation: animate 17s linear infinite;
-	   bottom: -30px;
-	   border-radius: 10px;
-   } 
-    .boxes li:nth-child(1){
-		left: 30%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 0s;
-
-	}
-	.boxes li:nth-child(2){
-		left: 69%;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-		animation-delay: 3s;
-		animation-duration: 30s;
-	}
-	.boxes li:nth-child(3){
-		left: 86%;
-		width: 15px;
-		height: 15px;
-		border-radius: 7.5px;
-		animation-delay: 2s;
-		animation-duration: 15s;
-	}
-	.boxes li:nth-child(4){
-		left: 57%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 2s;
-		animation-duration: 25s;
-	}
-	.boxes li:nth-child(5){
-		left: 15%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 4s;
-		animation-duration: 17s;
-	}
-	.boxes li:nth-child(6){
-		left: 85%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 4s;
-		animation-duration: 30s;
-	}
-	.boxes li:nth-child(7){
-		left: 48%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 4s;
-		animation-duration: 15s;
-	}
-	.boxes li:nth-child(8){
-		left: 33%;
-		width: 20px;
-		height: 20px;
-		animation-delay: 4s;
-		animation-duration: 30s;
-	}
-	@keyframes animate {
-		from{
-			transform: translateY(0) rotate(0deg);
-			opacity: 1;
-		}to{
-			transform: translateY(-300px) rotate(360deg);
-			opacity: 0;
-		}
-	} */
-	.leftdiv{
-		background-color:royalblue;
-		width: 50%;
-		height: 100%;
-		left: 0;
-		position: absolute;
-	}
-	.rightdiv{
-		background-color: #fb116b;
-		width: 50%;
-		height: 100%;
-		left: 50%;
-		position: absolute;
-	}
-   .inactive{
-	   display: none;
-   }
-
-   .active{
-	   display: flex;
-	  
-   }
-   
-   .topic{
-	   background-color:mediumvioletred;
-	   width: 100%;
-	   justify-content: center;
-	   align-items: center;
-	   
-   }
-   .topic h2{
-	   height: 50px;
-	   text-align: center;
-	   line-height: 50px;
-	   font-size: 22px;
-	   font-weight: bolder;
-	   color: #fff;
-   }
-   .drawer{
-	   width: 5%;
-	   height: 300px;
-	   background-color: blue;
-	   cursor: pointer;
-	   color: #fff;
-	   text-align: center;
-	   line-height: 300px;
-   }
-   .banner_content{
-		width: 100%;
-		height: 90%;
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		padding-top: 5%;
-		color: yellow;
-		justify-content: center;
-		
-   }
-   .project_cards{
-	   background-color: #fb116b;
-	   color: #fff;
-	   width: 90%;
-	   height: auto;
-	   border-radius: 10px;
-	   box-sizing: border-box;
-	   box-shadow:0 5px 10px #000 ;
-	   cursor: pointer;
-	   position: relative;
-	   transition: 4s;
-   }
-   .project_title{
-	   position: relative;
-	   height: 50px;
-	   line-height: 50px;
-   }
-   .project_title h4{
-		margin-left: 30px;
-		color: #fff;
-		line-height: 50px;
-   }
-   .project_title .down{
-	   position: absolute;
-	   width: 100%;
-	   top: 50%;
-	   justify-content: center;
-	   align-items: center;
-	   background-color: rgb(110, 224, 3);
-   }
-   .project_title .down i{
-	   color: #fff;
-   }
-   .pro_body{
-	   position: relative;
-	   background-color: #ec90e0;
-	   transition: 4s;
-	   display: none;
-	   padding: 5%;
-	   border-radius: 10px;
-	   overflow-y: auto;
-	   justify-content: center;
-   }
-   .pro_body p{
-	   position: absolute;
-	   left: 50%;
-	   display: block;
-	   top: 5%;
-	   padding: 0;
-	   margin: 0;
-   }
-   .proimg{
-	   position: relative;
-	   width: 40%;
-	   object-fit: cover;
-   }
-   .visible{
-	   display: flex;
-	   flex-direction: column;
-	   flex-wrap: wrap;
-   }
-   .cardimg{
-	   width: 100%;
-	   height: 85%;
-   }
-
-   /* overview styles*/
-   #about{
-	   background-color: magenta;
-	   border: crimson solid 5px;
-	   margin: 10px;
-	   box-sizing: border-box;
-	   box-shadow: 0 5px 10px #ec90e0;
-   }
-	#textdiv{
-	   background-color: darkslateblue;
-	   padding: 20px;
-	   position: relative;
-	   transition: 1s all ease;
-	   animation: borderAnimation;
-    }
-	#textdiv::before{
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 0;
-		height: 0;
-		border-bottom: 3px solid transparent;
-		border-left: 3px solid transparent;
-		transition: 2s all ease;
-	}
-	
-    #textdiv::after{
-		content: "";
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 0;
-		height: 0;
-		border-right: 3px solid transparent;
-		border-top: 3px solid transparent;
-		transition: 2s all ease;
-	}
-	#textdiv:hover::after,
-	#textdiv:hover::before
-	{
-		border-color:orangered;
-		width: 100%;
-		height: 100%;
-	}
-
-	#overviewimg{
-		width: 40%;
-		height: 40%;
-		margin-top: 10%;
-	}
-	.timebox{
-		position: absolute;
-		right: 30px;
-		top: 10px;
-		width: 180px;
-		height: 30px;
-		border-radius: 5px;
-		border: #ec90e0 2px solid;
-		background-color: aqua;
-		font-size: 14px;
-		font-weight: bold;
-		color: black;
-		text-align: center;
-		line-height: 30px;
-		cursor: default;
-	}
-
+  
 </style>
 
 <body>
@@ -642,7 +198,29 @@
 
 <!--about-->
 
+<!--about-->
 <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
+
+	<div class="container">
+		<div class="row no-gutters">
+		<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/home/overview.jpg);">
+		</div>
+		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
+		<div class="heading-section mb-5 pt-5 pl-md-5">
+		<div class="pr-md-5 mr-md-5">
+		<h2 class="mb-4">Overview</h2>
+		</div>
+		<p style="text-align: justify;">EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. It presents you with the research projects of the undergraduates of the Department of Computer Engineering. ESCaPe 2020 is the 5th symposium that is organized by the department and this time the symposium is open for a broader audience and aims to build a platform for the undergraduates to present their research ideas to the industry and academic community.</p>
+
+		</div>
+		</div>
+		</div>
+	</div>
+
+</section>
+
+
+<!-- <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
 	
 	<div class="container" id="overview_div">
 		<div class="row no-gutters">
@@ -666,16 +244,10 @@
 		</div>
 	</div>
 
-</section>
+</section> -->
 <section id="categories" class="ftco-section ftco-no-pt ftco-no-pb">
 	<div class="area">
 		<!-- <ul class="boxes">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
 			<li></li>
 			<li></li>
 		</ul> -->
@@ -687,9 +259,8 @@
 				<div class="topic fadeInUp"><h2>Embedded Systems</h2></div>
 				<div class="banner_content" style="background-image: url('img/sample/embedded.png'); display: cover;">
 					<div class="project_cards">
-						<div class="project_title" id="embbtn1"><h4>project 1</h4>
+						<div class="project_title" id="embbtn1"><h4>Presentation of the Research Articles</h4>
 							<span class="timebox">08:00 am - 08:30 am</span>
-							<!-- <div class="dow"><i class="fa fa-caret-down"></i></div> -->
 							
 						</div>
 						<div class="pro_body" id="emb1">
@@ -702,7 +273,7 @@
 					</div>
 					<div class="project_cards">
 						<div class="project_title" id="embbtn2"><h4>project 2</h4>
-							<span class="timebox">08:00 am - 08:30 am</span>
+							<span class="timebox">09:00 am - 09:30 am</span>
 						</div>
 						<div class="pro_body" id="emb2">
 							<img src="img/project_1/main.jpg" class="proimg">
@@ -714,7 +285,7 @@
 					</div>
 					<div class="project_cards">
 						<div class="project_title" id="embbtn3"><h4>project 3</h4>
-							<span class="timebox">08:00 am - 08:30 am</span>
+							<span class="timebox">10:00 am - 10:30 am</span>
 						</div>
 						<div class="pro_body" id="emb3">
 							<img src="img/project_1/main.jpg" class="proimg">
@@ -775,7 +346,7 @@
 			<span class="categoryCard inactive ftco-animate" id="banner3">
 				<!-- <div class="drawer" id="back3"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp"><h2>Data & Vision</h2></div>
-				<div class="banner_content" style="background-image: url('img/sample/brain.png'); display: cover;">
+				<div class="banner_content" style="background-image: url('img/sample/brain.png');">
 					<div class="project_cards">
 						<div class="project_title" id="dvbtn1"><h4>project 1</h4>
 							<span class="timebox">08:00 am - 08:30 am</span>
@@ -841,7 +412,7 @@
 			<div class="col-md-7 wrap-about py-md-3 ftco-animate">
 				<div class="heading-section">
 					<div class="pr-md-5">
-						<h2 class="mb-4 fadeInUp ftco-animate" style="color: orange; margin-left: 20%;">Categories</h2>
+						<h2 class="mb-4 fadeInUp ftco-animate" style="color: yellow; margin-left: 10%;">Categories</h2>
 					</div>	
 				</div>
 				<div class="category_desc" style="margin-left: 20%; color: #fff;">
@@ -893,7 +464,7 @@
 			<h2 class="mb-3" style="color:orange; font-weight: bold;">ESCaPe 2021 Schedule</h2>
 			</div>
 		</div>
-		<div class="card_container">
+		<!-- <div class="card_container">
 			<div class="sh_cards">
 				<div class="sh_card">
 					<h3 style="color: #fff;">Commencement of ESCaPe 2021</h3>
@@ -975,7 +546,79 @@
 				</div>
 			</div>
 			
-			
+			 -->
+
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<ul class="timeline">
+						<li>
+							<!-- <span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>3</h4></i>
+							</span> -->
+							<h4>Commencement of ESCaPe 2020</h4>
+							<span class="timebox">08:00 am - 08:30 am</span><br>
+							
+						</li>
+						<li>
+							<h4>Presentation of the Research Articles</h4>
+							<span class="timebox">08:00 am - 08:30 am</span><br>
+							<img src="img/project_1/p1.jpg" class="cardimg">
+							<p>
+								<ul>
+									<li class="prodetails">01: A Retinex based GAN Pipeline to Utilize Paired and Unpaired Datasets for Enhancing Low Light Images
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+									<li class="prodetails">02: Multi-Agent Reinforcement Learning in Sparsely Connected Cooperative Environments
+										<h6 class="chips">Embedded Systems</h6>
+									</li>
+									<li class="prodetails">03: SwarmLib- Programming Framework for Robot Swarms
+										<h6 class="chips">Software</h6>
+									</li>
+									<li class="prodetails">04: Dynamic Difficulty Adjustment (DDA) in FPS games using Strategy Analysis
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+								</ul>
+							</p>
+						</li>
+						<li>
+							<h4>What is Computer Science?</h4>
+							<span class="timebox">08:00 am - 08:30 am</span><br>
+							<img class="cardimg" src="img/speakers/pandu_ragan.jpg">
+							<p>
+								All are welcome. The prerequisites are enthusiasm, open mind and curiosity…
+
+								Prof. C. Pandu Rangan is recognized for his immense contribution to the field of scientific research especially in the areas of Restricting the problem domain, Approximate algorithm design, Randomized Algorithms, Parallel, and VLSI Algorithms, and Applied Cryptography.
+							</p>
+						</li>
+						<li>
+							<h4>Presentation of the Research Articles</h4>
+							<span class="timebox">08:00 am - 08:30 am</span><br>
+							<img src="img/project_1/p1.jpg" class="cardimg">
+							<p>
+								<ul>
+									<li class="prodetails">05: Nanopore DNA Sequencing Data Processing on Android Smartphones
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+									<li class="prodetails">06: miRNAFinder: An accurate plant pre-microRNA classifier with an analysis of feature impact
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+									<li class="prodetails">07: Data driven discovery of nucleotide sequences belonging to species in a metagenome
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+									<li class="prodetails">08: BAT: Bock Analytics Tool Integrated With Blockchain Based IoT Platform
+										<h6 class="chips">Data & Vision</h6>
+									</li>
+									<li class="prodetails">09: House Price Prediction using Random Forest</li>
+
+								</ul>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 			
 		</div>
 		
