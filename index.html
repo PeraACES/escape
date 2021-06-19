@@ -86,7 +86,7 @@
    
 
    .author_name{
-   	display: inline !important;
+   		display: inline !important;
    }
    .project_name{
 		transition: .3s all ease;
@@ -102,22 +102,21 @@
 
   /* categories */
    #categories{
-      
-      background:rgb(16, 15, 17);/*#ca0b36*/
+    
       height:720px;
       position: relative;
       
  
     }
 	.leftdiv{
-     background-color:#0e45db;
+     background-color:skyblue;
      height: 100%;
 	 position: absolute;
 	 left:0;
      
    }
    .rightdiv{
-     background-color: #fb116b;
+     
 	 position: absolute;
      height: 100%;
      right: 0;
@@ -147,7 +146,7 @@
       font-size: 18px;
       text-align: center;
       line-height: 40px;
-      color: white;
+      color: #000;
       box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
       
     }
@@ -182,6 +181,8 @@
      padding-top: 5%;
      color: yellow;
      justify-content: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
      
     }
     .project_cards{
@@ -194,7 +195,7 @@
       box-shadow:0 5px 10px #000 ;
       cursor: pointer;
       position: relative;
-      transition: 4s;
+      
     }
     .project_title{
       position: relative;
@@ -248,12 +249,7 @@
      cursor: default;
    }
    /* schedule */
-   #schedule{
-      margin-top: 2%;
-      margin-left: 5%;
-      margin-right: 5%;
-      padding-bottom: 5%;   
-    }
+   
    @media (max-width: 1200px){
      .project_title .timebox{
        
@@ -280,6 +276,9 @@
 	   #categories{
 			height:1000px;
 	   }
+	   .card{
+		   font-size: 14px;
+	   }
    }
      @media (max-width: 500px){
    	#categories{
@@ -293,21 +292,13 @@
 		 margin-top: 0px;
 	 }
 	 .category-title h2{
-		 font-size: 20px;
+		 font-size: 18px;
 	 }
    .card{
-      width: 120px;
-      height: 30px;
-      cursor: pointer;
-      background: rgba(17, 1, 1, 0.05);
-      margin: 2%;
-      border-radius: 10px;
-      font-size: 10px;
-      line-height: 30px;
-      text-align: center;
-      color: white;
-      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
-      
+      width: 180px;
+      height: 20px;
+      font-size: 6px;
+      line-height: 20px;
       }
       .cardimg{
        
@@ -644,10 +635,9 @@
 <!--about-->
 <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
 
-	<div class="container">
-		<div class="row no-gutters">
-		<div class="col-10 col-md-5 p-0 p-md-5 img img-2 d-flex justify-content-center align-items-center img-responsive" style="background-image: url(img/home/overview.jpg);">
-		</div>
+	<div class="container mt-2 mt-2">
+		<div class="row">
+		<img src="img/home/overview.jpg" class="img-responsive col-10 col-md-5"  style="background-size: contain;">
 		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
 		<div class="heading-section mb-5 pt-5 pl-md-5">
 		<div class="pr-md-5 mr-md-5">
@@ -689,14 +679,9 @@
 
 </section> -->
 <section id="categories" class="ftco-section ftco-no-pt ftco-no-pb">
-	<div class="area">
-		<!-- <ul class="boxes">
-			<li></li>
-			<li></li>
-		</ul> -->
-	</div>
+	
 	<div class="container row">
-		<div class="leftdiv col-7">
+		<div class="leftdiv col-8">
 			<span class="categoryCard active ftco-animate" id="banner1">
 				<!-- <div class="drawer" id="back1"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp text-center col-12"><h2>Embedded Systems</h2></div>
@@ -955,14 +940,14 @@
 	
 			</span>
 		</div>
-		<div class="rightdiv col-5 justify-content-center">
+		<div class="rightdiv col-4 justify-content-center">
 			<div class="col-md-7 ftco-animate">
 				<div class="heading-section mt-3 category-title">
 					
-					<h2 class="fadeInUp ftco-animate text-center" style="color: yellow;">Categories</h2>
+					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
 					
 				</div>
-				<div class="category_desc ml-0 ml-md-4 mb-lg-9" style="color: #fff;">
+				<div class="category_desc ml-0 ml-md-4 mb-lg-9" style="color: mediumblue;">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt impedit, pariatur, eum necessitatibus numquam at ex labore soluta architecto unde doloribus libero eveniet repellendus culpa nisi blanditiis assumenda error sit.</p>
 
 				</div>
