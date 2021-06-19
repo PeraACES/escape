@@ -99,7 +99,24 @@
    		height: auto !important;
    }
 
-
+   #categories1{
+	   position: relative;
+	   height: 800px;
+   }
+   .leftdiv{
+     background-color:skyblue;
+     height: auto;
+	 position: absolute;
+	 left:0;
+     
+   }
+   .rightdiv{
+     
+	 position: absolute;
+     height: auto;
+     right: 0;
+   }
+   
   /* categories */
    #categories{
     
@@ -108,19 +125,20 @@
       
  
     }
-	.leftdiv{
+	.leftdiv_old{
      background-color:skyblue;
-     height: 100%;
+     height: 90%;
 	 position: absolute;
 	 left:0;
      
    }
-   .rightdiv{
+   .rightdiv_old{
      
 	 position: absolute;
-     height: 100%;
+     height: 90%;
      right: 0;
    }
+	
     .cards{
       transform-style: preserve-3d;
       perspective: 500px;
@@ -135,7 +153,7 @@
 	  z-index: 40;
     }
     
-    .card{
+    .mycard{
 	  z-index: 50;
       width: 250px;
       height: 40px;
@@ -275,7 +293,7 @@
 	   #categories{
 			height:1000px;
 	   }
-	   .card{
+	   .mycard{
 		   font-size: 14px;
 	   }
    }
@@ -293,7 +311,7 @@
 	 .category-title h2{
 		 font-size: 18px;
 	 }
-   .card{
+   .mycard{
       width: 180px;
       height: 20px;
       font-size: 6px;
@@ -381,7 +399,7 @@
     .active_card{
      background: rgba(17, 1, 1, 0.25)!important;
     }
-    .card:hover{
+    .mycard:hover{
       transform: scale(1.1);
       transition: 1.6s all;
       
@@ -396,10 +414,6 @@
    
   
     .categoryCard{
-      width: 100%;
-      background: url('img/sample/embedded.png');
-      background-repeat: no-repeat;
-      height: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -545,6 +559,8 @@
      margin-left: 30px;
      margin-bottom: 10px;
    }
+
+ 
 </style>
 
 <body>
@@ -677,10 +693,11 @@
 	</div>
 
 </section> -->
+
 <section id="categories" class="ftco-section ftco-no-pt ftco-no-pb mt-2">
 	
 	<div class="container row">
-		<div class="leftdiv col-8">
+		<div class="leftdiv_old col-8">
 			<span class="categoryCard active ftco-animate" id="banner1">
 				<!-- <div class="drawer" id="back1"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp text-center col-12"><h2>Embedded Systems</h2></div>
@@ -939,7 +956,7 @@
 	
 			</span>
 		</div>
-		<div class="rightdiv col-4 justify-content-center">
+		<div class="rightdiv_old col-4 justify-content-center">
 			<div class="col-md-7 ftco-animate">
 				<div class="heading-section mt-3 category-title">
 					
@@ -953,32 +970,32 @@
 			</div>
 
 			<div class="cards active mt-lg-10" id="cardV">
-				<span class="card active btn-success" id="category1">Embedded Systems
+				<span class="mycard active btn-success" id="category1">Embedded Systems
 	
 				</span>
-				<span class="card active btn-primary" id="category2">Software
+				<span class="mycard active btn-primary" id="category2">Software
 					
 				</span>
-				<span class="card active btn-primary" id="category3">Data & Vision
+				<span class="mycard active btn-primary" id="category3">Data & Vision
 					
 				</span>
-				<span class="card active btn-primary" id="category4">Networking
+				<span class="mycard active btn-primary" id="category4">Networking
 					
 				</span>
 			</div>
 		</div>
 <!-- 		
 		<div class="cards active" id="cardV">
-			<span class="card active" id="category1">Embedded Systems
+			<span class="mycard active" id="category1">Embedded Systems
 				<img src="img/sample/embedded.png" class="cardimg">
 			</span>
-			<span class="card active" id="category2">Software
+			<span class="mycard active" id="category2">Software
 				<img src="img/sample/iot.png" class="cardimg">
 			</span>
-			<span class="card active" id="category3">Data & Vision
+			<span class="mycard active" id="category3">Data & Vision
 				<img src="img/home/bg_1.jpg" class="cardimg">
 			</span>
-			<span class="card active" id="category4">Networking
+			<span class="mycard active" id="category4">Networking
 				<img src="img/home/bg_11.jpg" class="cardimg">
 			</span>
 		</div> -->
@@ -1448,6 +1465,89 @@
 	</div>
 
 </section>
+
+<div id="categories1" class="ftco-section mt-2">
+	<div class="container ">
+		<div class="leftdiv col-8 ">
+				<div class="row">
+					<span class="categoryCard active ftco-animate pb-md-5" id="banner1" style="background-image: url('img/sample/embedded.png'); display: cover;">
+						<div class="card-deck col-12 m-2" >
+							<div class="card">
+								<div class="card-body bg-primary text-white">
+									
+								<h3 class="text-white">project1</h3>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
+									 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
+							
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body bg-primary text-white">
+									
+								<h3 class="text-white">project2</h3>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
+									 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
+							
+								</div>
+							</div>
+						</div>
+							<div class="card-deck col-12 m-2" >
+								<div class="card ">
+									<div class="card-body bg-primary text-white">
+										
+									<h3 class="text-white">project3</h3>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
+										 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
+								
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body bg-primary text-white">
+										
+									<h3 class="text-white">project4</h3>
+									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
+										 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
+								
+									</div>
+								</div>
+							
+							
+							</div>
+						
+					</span>
+				</div>
+			
+		</div>
+		<div class="rightdiv col-4 justify-content-center">
+			<div class="col-md-7 ftco-animate">
+				<div class="heading-section mt-3 category-title">
+					
+					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
+					
+				</div>
+				<div class="category_desc ml-0 ml-md-4 mb-lg-9" style="color: mediumblue;">
+					<p>soluta architecto unde doloribus libero eveniet repellendus culpa nisi blanditiis assumenda error sit.</p>
+
+				</div>
+			</div>
+
+			<div class=" mt-lg-3 " id="cardV">
+				<span class="card active btn-success m-2" id="category1">Embedded Systems
+	
+				</span>
+				<span class="card active btn-primary m-2" id="category2">Software
+					
+				</span>
+				<span class="card active btn-primary m-2" id="category3">Data & Vision
+					
+				</span>
+				<span class="card active btn-primary m-2" id="category4">Networking
+					
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!--speakers-->
 <section id="speakers" class="ftco-section ftco-no-pt ftco-no-pb">
@@ -1967,7 +2067,7 @@
 		$('.reg_link a').css('color','white');
 	});
 
-	let card= document.getElementById('cardV');
+	let mycard= document.getElementById('cardV');
 	let card1= document.getElementById('category1');
 	let card2= document.getElementById('category2');
 	let card3= document.getElementById('category3');
