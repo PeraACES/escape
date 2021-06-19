@@ -140,7 +140,6 @@
       width: 250px;
       height: 40px;
       cursor: pointer;
-      background: rgba(17, 1, 1, 0.05);
       margin: 2%;
       border-radius: 10px;
       font-size: 18px;
@@ -678,7 +677,7 @@
 	</div>
 
 </section> -->
-<section id="categories" class="ftco-section ftco-no-pt ftco-no-pb">
+<section id="categories" class="ftco-section ftco-no-pt ftco-no-pb mt-2">
 	
 	<div class="container row">
 		<div class="leftdiv col-8">
@@ -954,16 +953,16 @@
 			</div>
 
 			<div class="cards active mt-lg-10" id="cardV">
-				<span class="card active active_card" id="category1">Embedded Systems
+				<span class="card active btn-success" id="category1">Embedded Systems
 	
 				</span>
-				<span class="card active " id="category2">Software
+				<span class="card active btn-primary" id="category2">Software
 					
 				</span>
-				<span class="card active " id="category3">Data & Vision
+				<span class="card active btn-primary" id="category3">Data & Vision
 					
 				</span>
-				<span class="card active " id="category4">Networking
+				<span class="card active btn-primary" id="category4">Networking
 					
 				</span>
 			</div>
@@ -2024,10 +2023,10 @@
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('active', 'inactive');
-		card1.classList.add('active_card');
-		card2.classList.remove('active_card');
-		card3.classList.remove('active_card');
-		card4.classList.remove('active_card');
+		card1.classList.replace('btn-primary', 'btn-success');
+		card2.classList.replace('btn-success', 'btn-primary');
+		card3.classList.replace('btn-success', 'btn-primary');
+		card4.classList.replace('btn-success', 'btn-primary');
 		emb1.classList.remove('visible');
 		emb2.classList.remove('visible');
 		emb3.classList.remove('visible');
@@ -2038,10 +2037,10 @@
 		banner2.classList.replace('inactive', 'active');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('active', 'inactive');
-		card1.classList.remove('active_card');
-		card2.classList.add('active_card');
-		card3.classList.remove('active_card');
-		card4.classList.remove('active_card');
+		card2.classList.replace('btn-primary', 'btn-success');
+		card1.classList.replace('btn-success', 'btn-primary');
+		card3.classList.replace('btn-success', 'btn-primary');
+		card4.classList.replace('btn-success', 'btn-primary');
 		soft1.classList.remove('visible');
 		soft2.classList.remove('visible');
 		soft3.classList.remove('visible');
@@ -2052,10 +2051,10 @@
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('inactive', 'active');
 		banner4.classList.replace('active', 'inactive');
-		card1.classList.remove('active_card');
-		card2.classList.remove('active_card');
-		card3.classList.add('active_card');
-		card4.classList.remove('active_card');
+		card3.classList.replace('btn-primary', 'btn-success');
+		card1.classList.replace('btn-success', 'btn-primary');
+		card2.classList.replace('btn-success', 'btn-primary');
+		card4.classList.replace('btn-success', 'btn-primary');
 		dv1.classList.remove('visible');
 		dv2.classList.remove('visible');
 		dv3.classList.remove('visible');
@@ -2066,10 +2065,10 @@
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('inactive', 'active');
-		card1.classList.remove('active_card');
-		card2.classList.remove('active_card');
-		card3.classList.remove('active_card');
-		card4.classList.add('active_card');
+		card4.classList.replace('btn-primary', 'btn-success');
+		card1.classList.replace('btn-success', 'btn-primary');
+		card2.classList.replace('btn-success', 'btn-primary');
+		card3.classList.replace('btn-success', 'btn-primary');
 		net1.classList.remove('visible');
 		net2.classList.remove('visible');
 		net3.classList.remove('visible');
