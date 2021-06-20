@@ -106,13 +106,13 @@
    .leftdiv{
      background-color:skyblue;
      height: auto;
-	 position: absolute;
+
 	 left:0;
      
    }
    .rightdiv{
      
-	 position: absolute;
+
      height: auto;
      right: 0;
    }
@@ -650,7 +650,7 @@
 <!--about-->
 <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
 
-	<div class="container mt-2 mt-2">
+	<div class="container mt-2">
 		<div class="row">
 		<img src="img/home/overview.jpg" class="img-responsive col-10 col-md-5"  style="background-size: contain;">
 		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
@@ -693,13 +693,12 @@
 	</div>
 
 </section> -->
-
+<!-- 
 <section id="categories" class="ftco-section ftco-no-pt ftco-no-pb mt-2">
 	
 	<div class="container row">
 		<div class="leftdiv_old col-8">
 			<span class="categoryCard active ftco-animate" id="banner1">
-				<!-- <div class="drawer" id="back1"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp text-center col-12"><h2>Embedded Systems</h2></div>
 				<div class="banner_content" style="background-image: url('img/sample/embedded.png'); display: cover;">
 					<div class="project_cards row">
@@ -763,7 +762,6 @@
 				</div>
 			</span>
 			<span class="categoryCard inactive ftco-animate" id="banner2">
-				<!-- <div class="drawer" id="back2"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp text-center col-12"><h2>Software</h2></div>
 				<div class="banner_content" style="background-image: url('img/sample/iot.png'); display: cover;">
 					<div class="project_cards">
@@ -828,7 +826,6 @@
 	
 			</span>
 			<span class="categoryCard inactive ftco-animate" id="banner3">
-				<!-- <div class="drawer" id="back3"><i class="fa fa-caret-left"></i></div> -->
 				<div class="topic fadeInUp text-center col-12"><h2>Data & Vision</h2></div>
 				<div class="banner_content" style="background-image: url('img/sample/brain.png');">
 					<div class="project_cards">
@@ -892,7 +889,7 @@
 	
 			</span>
 			<span class="categoryCard inactive ftco-animate" id="banner4">
-				<!-- <div class="drawer" id="back4"><i class="fa fa-caret-left"></i></div> -->
+				
 				<div class="topic fadeInUp text-center col-12"><h2>Networking</h2></div>
 				<div class="banner_content" style="background-image: url('img/sample/network.png'); display: cover;">
 					<div class="project_cards">
@@ -983,7 +980,7 @@
 					
 				</span>
 			</div>
-		</div>
+		</div> -->
 <!-- 		
 		<div class="cards active" id="cardV">
 			<span class="mycard active" id="category1">Embedded Systems
@@ -999,7 +996,157 @@
 				<img src="img/home/bg_11.jpg" class="cardimg">
 			</span>
 		</div> -->
+<!-- 		
+	</div>
+</section> -->
+
+<section id="categories" class="ftco-section">
+	<style>
+		.cat-describing{
+			font-size: 12px;
+		}
+		.cat-title{
+			font-size: 18px;
+		}
+		@media(max-width: 500px){
+			.cat-describing{
+				font-size: 9px;
+			}
+			.cat-title{
+				font-size: 12px;
+			}
+		}
 		
+	</style>
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<span class="ftco-animate">
+						<div class="row justify-content-center" >
+							<div class="card col-5 col-lg-5  bg-success m-1 m-lg-2" style="cursor: pointer;" id="category1">
+								<div class="card-body p-0 p-lg-3 text-white">
+									
+								<h4 class="text-white  cat-title">Embedded Systems</h4>
+								<p class="cat-describing">
+									An Embedded System integrates software and hardware jointly and specifically
+									designed to provide given functionalities, which are often critical.
+									It was born with the invention of microcontrollers and since then it has evolved into
+									various forms, from primarily being designed for machine control applications
+									to various other new verticals with the convergence of communications.
+								</p>
+								</div>
+							</div>
+							<div class="card col-5 col-lg-5 m-1 m-lg-2 bg-primary" style="cursor: pointer;" id="category2">
+								<div class="card-body  p-0 p-lg-3 text-white">
+									
+								<h4 class="text-white cat-title">Software Engineering</h4>
+								<p class="cat-describing">
+									Software engineering researchs focus on better ways to develop and evaluate the software.
+									They are motivated from practical problems, and the key objectives of the reseach are often 
+									the quality, cost, and timeliness of software projects.
+								</p>
+								</div>
+							</div>
+						
+							
+								<div class="card col-5 col-lg-5 m-1 m-lg-2 bg-primary"  style="cursor: pointer;" id="category3">
+									<div class="card-body  p-0 p-lg-3 text-white">
+										
+									<h4 class="text-white cat-title">Data & Vision</h4>
+									<p class="cat-describing">
+										Computer vision is a subfield Of AI which uses images, objects, and patterns
+										to find solutions. Machine learning algorithms are the critical technology 
+										behind computer vision which gives the computer he natural capability to sense
+										and understand data in the form of images, graphic documents, and videos.
+									</p>
+									</div>
+								</div>
+								<div class="card col-5 col-lg-5  bg-primary m-1 m-lg-2"  style="cursor: pointer;" id="category4">
+									<div class="card-body  p-0 p-lg-3 text-white">
+										
+									<h4 class="text-white  cat-title">Networking</h4>
+									<p class="cat-describing">
+										Computer networking is an engineering discipline that aims to study
+										and analyze the communication process among various computing devices
+										or computer systems that are linked, or networked, together to exchange information and share resources.
+									</p>
+									</div>
+								</div>
+							
+							
+							</div>
+						
+					</span>
+				</div>
+			
+		</div>
+		<div class="col-sm-12 col-md-6 justify-content-center">
+			<div class="col-md-7 ftco-animate">
+				<div class="heading-section mt-3 category-title">
+					
+					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
+					
+				</div>
+				
+			</div>
+
+			<div class="justify-content-center active row" id="banner1">
+				<span class="card active btn-primary m-2 col-10" id="emb1">
+					Embedded Systems project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb2">
+					Embedded Systems project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb3">
+					Embedded Systems project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb4">
+					Embedded Systems project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner2">
+				<span class="card active btn-primary m-2 col-10" id="soft1">
+					Software Engineering project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft2">
+					Software Engineering project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft3">
+					Software Engineeringproject3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft4">
+					Software Engineering project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner3">
+				<span class="card active btn-primary m-2 col-10" id="data1">
+					project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data2">
+					project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data3">
+					project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data4">
+					project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner4">
+				<span class="card active btn-primary m-2 col-10" id="net1">
+					Networking project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net2">
+					Networking project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net3">
+					Networking project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net4">
+					Networking project4<br>line2
+				</span>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -1465,89 +1612,6 @@
 	</div>
 
 </section>
-
-<div id="categories1" class="ftco-section mt-2">
-	<div class="container ">
-		<div class="leftdiv col-8 ">
-				<div class="row">
-					<span class="categoryCard active ftco-animate pb-md-5" id="banner1" style="background-image: url('img/sample/embedded.png'); display: cover;">
-						<div class="card-deck col-12 m-2" >
-							<div class="card">
-								<div class="card-body bg-primary text-white">
-									
-								<h3 class="text-white">project1</h3>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
-									 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
-							
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-body bg-primary text-white">
-									
-								<h3 class="text-white">project2</h3>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
-									 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
-							
-								</div>
-							</div>
-						</div>
-							<div class="card-deck col-12 m-2" >
-								<div class="card ">
-									<div class="card-body bg-primary text-white">
-										
-									<h3 class="text-white">project3</h3>
-									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
-										 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
-								
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-body bg-primary text-white">
-										
-									<h3 class="text-white">project4</h3>
-									<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam nostrum facilis accusamus mollitia, error sapiente quisquam voluptates
-										 molestias obcaecati velit at, fugit vel distinctio laudantium eos atque dolore dolor.</p>
-								
-									</div>
-								</div>
-							
-							
-							</div>
-						
-					</span>
-				</div>
-			
-		</div>
-		<div class="rightdiv col-4 justify-content-center">
-			<div class="col-md-7 ftco-animate">
-				<div class="heading-section mt-3 category-title">
-					
-					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
-					
-				</div>
-				<div class="category_desc ml-0 ml-md-4 mb-lg-9" style="color: mediumblue;">
-					<p>soluta architecto unde doloribus libero eveniet repellendus culpa nisi blanditiis assumenda error sit.</p>
-
-				</div>
-			</div>
-
-			<div class=" mt-lg-3 " id="cardV">
-				<span class="card active btn-success m-2" id="category1">Embedded Systems
-	
-				</span>
-				<span class="card active btn-primary m-2" id="category2">Software
-					
-				</span>
-				<span class="card active btn-primary m-2" id="category3">Data & Vision
-					
-				</span>
-				<span class="card active btn-primary m-2" id="category4">Networking
-					
-				</span>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!--speakers-->
 <section id="speakers" class="ftco-section ftco-no-pt ftco-no-pb">
@@ -2073,46 +2137,6 @@
 	let card3= document.getElementById('category3');
 	let card4= document.getElementById('category4');
 
-	let embbtn1 = document.getElementById('embbtn1');
-	let embbtn2 = document.getElementById('embbtn2');
-	let embbtn3 = document.getElementById('embbtn3');
-	let embbtn4 = document.getElementById('embbtn4');
-
-	let emb1 = document.getElementById('emb1');
-	let emb2 = document.getElementById('emb2');
-	let emb3 = document.getElementById('emb3');
-	let emb4 = document.getElementById('emb4');
-
-	let softbtn1 = document.getElementById('softbtn1');
-	let softbtn2 = document.getElementById('softbtn2');
-	let softbtn3 = document.getElementById('softbtn3');
-	let softbtn4 = document.getElementById('softbtn4');
-
-	let soft1 = document.getElementById('soft1');
-	let soft2 = document.getElementById('soft2');
-	let soft3 = document.getElementById('soft3');
-	let soft4 = document.getElementById('soft4');
-
-	let dvbtn1 = document.getElementById('dvbtn1');
-	let dvbtn2 = document.getElementById('dvbtn2');
-	let dvbtn3 = document.getElementById('dvbtn3');
-	let dvbtn4 = document.getElementById('dvbtn4');
-
-	let dv1 = document.getElementById('dv1');
-	let dv2 = document.getElementById('dv2');
-	let dv3 = document.getElementById('dv3');
-	let dv4 = document.getElementById('dv4');
-
-	let netbtn1 = document.getElementById('netbtn1');
-	let netbtn2 = document.getElementById('netbtn2');
-	let netbtn3 = document.getElementById('netbtn3');
-	let netbtn4 = document.getElementById('netbtn4');
-
-	let net1 = document.getElementById('net1');
-	let net2 = document.getElementById('net2');
-	let net3 = document.getElementById('net3');
-	let net4 = document.getElementById('net4');
-
 	let banner1= document.getElementById('banner1');
 	let banner2= document.getElementById('banner2');
 	let banner3= document.getElementById('banner3');
@@ -2123,184 +2147,44 @@
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('active', 'inactive');
-		card1.classList.replace('btn-primary', 'btn-success');
-		card2.classList.replace('btn-success', 'btn-primary');
-		card3.classList.replace('btn-success', 'btn-primary');
-		card4.classList.replace('btn-success', 'btn-primary');
-		emb1.classList.remove('visible');
-		emb2.classList.remove('visible');
-		emb3.classList.remove('visible');
-		emb4.classList.remove('visible');
+		card1.classList.replace('bg-primary', 'bg-success');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+		
 	})
 	card2.addEventListener('click', ()=>{
 		banner1.classList.replace('active', 'inactive');
 		banner2.classList.replace('inactive', 'active');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('active', 'inactive');
-		card2.classList.replace('btn-primary', 'btn-success');
-		card1.classList.replace('btn-success', 'btn-primary');
-		card3.classList.replace('btn-success', 'btn-primary');
-		card4.classList.replace('btn-success', 'btn-primary');
-		soft1.classList.remove('visible');
-		soft2.classList.remove('visible');
-		soft3.classList.remove('visible');
-		soft4.classList.remove('visible');
+		card2.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+	
 	})
 	card3.addEventListener('click', ()=>{
 		banner1.classList.replace('active', 'inactive');
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('inactive', 'active');
 		banner4.classList.replace('active', 'inactive');
-		card3.classList.replace('btn-primary', 'btn-success');
-		card1.classList.replace('btn-success', 'btn-primary');
-		card2.classList.replace('btn-success', 'btn-primary');
-		card4.classList.replace('btn-success', 'btn-primary');
-		dv1.classList.remove('visible');
-		dv2.classList.remove('visible');
-		dv3.classList.remove('visible');
-		dv4.classList.remove('visible');
+		card3.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+	
 	})
 	card4.addEventListener('click', ()=>{
 		banner1.classList.replace('active', 'inactive');
 		banner2.classList.replace('active', 'inactive');
 		banner3.classList.replace('active', 'inactive');
 		banner4.classList.replace('inactive', 'active');
-		card4.classList.replace('btn-primary', 'btn-success');
-		card1.classList.replace('btn-success', 'btn-primary');
-		card2.classList.replace('btn-success', 'btn-primary');
-		card3.classList.replace('btn-success', 'btn-primary');
-		net1.classList.remove('visible');
-		net2.classList.remove('visible');
-		net3.classList.remove('visible');
-		net4.classList.remove('visible');
-	})
-
-	embbtn1.addEventListener('click', ()=>{
+		card4.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
 	
-		emb1.classList.toggle('visible');
-		emb2.classList.remove('visible');
-		emb3.classList.remove('visible');
-		emb4.classList.remove('visible');
-		
 	})
-	embbtn2.addEventListener('click', ()=>{
-		emb1.classList.remove('visible');
-		emb2.classList.toggle('visible');
-		emb3.classList.remove('visible');
-		emb4.classList.remove('visible');
 
-		
-	})
-	embbtn3.addEventListener('click', ()=>{
-		emb1.classList.remove('visible');
-		emb2.classList.remove('visible');
-		emb3.classList.toggle('visible');
-		emb4.classList.remove('visible');
-
-		
-	})
-	embbtn4.addEventListener('click', ()=>{
-		emb1.classList.remove('visible');
-		emb2.classList.remove('visible');
-		emb3.classList.remove('visible');
-		emb4.classList.toggle('visible');
-
-		
-	})
-	softbtn1.addEventListener('click', ()=>{
-		
-		soft1.classList.toggle('visible');
-		soft2.classList.remove('visible');
-		soft3.classList.remove('visible');
-		soft4.classList.remove('visible');
-		
-	})
-	softbtn2.addEventListener('click', ()=>{
-		soft1.classList.remove('visible');
-		soft2.classList.toggle('visible');
-		soft3.classList.remove('visible');
-		soft4.classList.remove('visible');
-
-		
-	})
-	softbtn3.addEventListener('click', ()=>{
-		soft1.classList.remove('visible');
-		soft2.classList.remove('visible');
-		soft3.classList.toggle('visible');
-		soft4.classList.remove('visible');
-
-		
-	})
-	softbtn4.addEventListener('click', ()=>{
-		soft1.classList.remove('visible');
-		soft2.classList.remove('visible');
-		soft3.classList.remove('visible');
-		soft4.classList.toggle('visible');
-
-		
-	})
-	dvbtn1.addEventListener('click', ()=>{
-	
-		dv1.classList.toggle('visible');
-		dv2.classList.remove('visible');
-		dv3.classList.remove('visible');
-		dv4.classList.remove('visible');
-		
-	})
-	dvbtn2.addEventListener('click', ()=>{
-		dv1.classList.remove('visible');
-		dv2.classList.toggle('visible');
-		dv3.classList.remove('visible');
-		dv4.classList.remove('visible');
-
-		
-	})
-	dvbtn3.addEventListener('click', ()=>{
-		dv1.classList.remove('visible');
-		dv2.classList.remove('visible');
-		dv3.classList.toggle('visible');
-		dv4.classList.remove('visible');
-
-		
-	})
-	dvbtn4.addEventListener('click', ()=>{
-		dv1.classList.remove('visible');
-		dv2.classList.remove('visible');
-		dv3.classList.remove('visible');
-		dv4.classList.toggle('visible');
-
-		
-	})
-	netbtn1.addEventListener('click', ()=>{
-		
-		net1.classList.toggle('visible');
-		net2.classList.remove('visible');
-		net3.classList.remove('visible');
-		net4.classList.remove('visible');
-		
-	})
-	netbtn2.addEventListener('click', ()=>{
-		net1.classList.remove('visible');
-		net2.classList.toggle('visible');
-		net3.classList.remove('visible');
-		net4.classList.remove('visible');
-
-		
-	})
-	netbtn3.addEventListener('click', ()=>{
-		net1.classList.remove('visible');
-		net2.classList.remove('visible');
-		net3.classList.toggle('visible');
-		net4.classList.remove('visible');
-
-		
-	})
-	netbtn4.addEventListener('click', ()=>{
-		net1.classList.remove('visible');
-		net2.classList.remove('visible');
-		net3.classList.remove('visible');
-		net4.classList.toggle('visible');
-
-		
-})
 </script>
