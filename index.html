@@ -118,13 +118,7 @@
    }
    
   /* categories */
-   #categories{
-    
-      height:720px;
-      position: relative;
-      
- 
-    }
+   
 	.leftdiv_old{
      background-color:skyblue;
      height: 90%;
@@ -1002,28 +996,48 @@
 
 <section id="categories" class="ftco-section">
 	<style>
+		#categories{
+    
+			position: relative;
+			
+
+		}
 		.cat-describing{
-			font-size: 12px;
+			font-size: 14px;
 		}
 		.cat-title{
 			font-size: 18px;
 		}
 		@media(max-width: 500px){
 			.cat-describing{
-				font-size: 9px;
+				font-size: 10px;
 			}
 			.cat-title{
-				font-size: 12px;
+				font-size: 15px;
+			}
+		
+		}
+		@media(max-width:300px){
+			#categories{
+				
+				position: relative;
+				margin-bottom: 400px;
+
 			}
 		}
 		
+		
 	</style>
-	<div class="row">
-		<div class="col-sm-12 col-md-6">
+	<div class="col-12 ftco-animate text-center">
+		<h1 class="fadeInUp ftco-animate" style="color: darkblue;">Categories</h1>
+		
+	</div>
+	<div class="row ml-4">
+		<div class="col-xs-12 col-md-6">
 				<div class="row">
 					<span class="ftco-animate">
 						<div class="row justify-content-center" >
-							<div class="card col-5 col-lg-5  bg-success m-1 m-lg-2" style="cursor: pointer;" id="category1">
+							<div class="card col-xs-10 col-offset-1 col-md-5  bg-success m-1 m-lg-2" style="cursor: pointer;" id="category1">
 								<div class="card-body p-0 p-lg-3 text-white">
 									
 								<h4 class="text-white  cat-title">Embedded Systems</h4>
@@ -1036,7 +1050,7 @@
 								</p>
 								</div>
 							</div>
-							<div class="card col-5 col-lg-5 m-1 m-lg-2 bg-primary" style="cursor: pointer;" id="category2">
+							<div class="card col-xs-10 col-offset-1 col-md-5 m-1 m-lg-2 bg-primary" style="cursor: pointer;" id="category2">
 								<div class="card-body  p-0 p-lg-3 text-white">
 									
 								<h4 class="text-white cat-title">Software Engineering</h4>
@@ -1049,7 +1063,7 @@
 							</div>
 						
 							
-								<div class="card col-5 col-lg-5 m-1 m-lg-2 bg-primary"  style="cursor: pointer;" id="category3">
+								<div class="card col-xs-10 col-offset-1 col-md-5 m-1 m-lg-2 bg-primary"  style="cursor: pointer;" id="category3">
 									<div class="card-body  p-0 p-lg-3 text-white">
 										
 									<h4 class="text-white cat-title">Data & Vision</h4>
@@ -1061,7 +1075,7 @@
 									</p>
 									</div>
 								</div>
-								<div class="card col-5 col-lg-5  bg-primary m-1 m-lg-2"  style="cursor: pointer;" id="category4">
+								<div class="card col-xs-10 col-offset-1 col-md-5  bg-primary m-1 m-lg-2"  style="cursor: pointer;" id="category4">
 									<div class="card-body  p-0 p-lg-3 text-white">
 										
 									<h4 class="text-white  cat-title">Networking</h4>
@@ -1080,15 +1094,8 @@
 				</div>
 			
 		</div>
-		<div class="col-sm-12 col-md-6 justify-content-center">
-			<div class="col-md-7 ftco-animate">
-				<div class="heading-section mt-3 category-title">
-					
-					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
-					
-				</div>
-				
-			</div>
+		<div class="col-xs-12 col-md-6 justify-content-center mt-lg-5">
+			
 
 			<div class="justify-content-center active row" id="banner1">
 				<span class="card active btn-primary m-2 col-10" id="emb1">
