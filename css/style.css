@@ -5,6 +5,21 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  /* color pellete 1 */
+   /* red
+   white
+   lightskyblue
+   rgb(11, 0, 36)
+   rgb(161, 0, 94)
+   #fb116b
+   royalblue
+   orange */
+   --bgmegenda : #9e0250;
+   --orange:#fa6706;
+   --bgindigo: #fb116b;
+   --bgblue:#0e45db;
+   
+    /*
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -25,12 +40,13 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #343a40; */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+ 
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -39,7 +55,7 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+  
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -8544,7 +8560,7 @@ h1, h2, h3, h4, h5,
         .ftco-schedule .nav-pills .nav-link {
           color: rgba(255, 255, 255, 0.7); } }
       .ftco-schedule .nav-pills .nav-link:hover {
-        background: #0455ee;
+        background: #3a17b8;
         color: #fff; }
       .ftco-schedule .nav-pills .nav-link.active {
         color: #fff;
@@ -8554,7 +8570,7 @@ h1, h2, h3, h4, h5,
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease;
         border: 1px solid transparent;
-        background: #1162fb; }
+        background: #3a17b8; }
         .ftco-schedule .nav-pills .nav-link.active:after {
           opacity: 1; }
         @media (max-width: 767.98px) {
@@ -8600,7 +8616,7 @@ h1, h2, h3, h4, h5,
       font-size: 24px;
       font-weight: 700; }
       .speaker-wrap .text h2 a {
-        color: #1162fb; }
+        color: #3a17b8; }
     .speaker-wrap .text h3.speaker-name {
       font-size: 20px;
       font-weight: 600; }
@@ -8609,7 +8625,7 @@ h1, h2, h3, h4, h5,
       color: rgba(0, 0, 0, 0.4); }
     .speaker-wrap .text .time {
       font-weight: 600;
-      color: #1162fb;
+      color: #3a17b8;
       font-size: 20px;
       display: block;
       margin-bottom: 10px; }
