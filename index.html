@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>ESCaPe 2020</title>
+	<title>ESCaPe 2021</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,6 +33,7 @@
 
 <style type="text/css">
 
+
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
 		color: white;
 		font-weight: bold;
@@ -43,7 +44,7 @@
 	}
 
   .detail-info{
-    border: 2px solid #17a2b8;
+    border: 2px solid lightskyblue;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -58,11 +59,22 @@
   .icon_background{
   	z-index: 1;
     position: absolute;
-    left: 2px;
-    width: 35px;
-    height: 20px;
-    background-color: white;
+    left: -50px;
+	top: -10px;
+    width: 40px;
+    height: 40px;
+	
+	justify-content: center;
+	align-items: center;
   }
+  .icon_background span{
+	  position: absolute;
+	  z-index: 2;
+	 
+	  justify-content: center;
+	  align-items: center;
+  } 
+
 
   .blog-entry .meta > div a {
     color: white;
@@ -71,16 +83,14 @@
     color: white;
    }
 
-   .time_box{
-   	color: white !important;
-   }
+   
 
    .author_name{
-   	display: inline !important;
+   		display: inline !important;
    }
    .project_name{
 		transition: .3s all ease;
-    	color: #1162fb !important;
+    	color: blue !important;
     	display: block;
     	text-align: initial;
    }
@@ -89,6 +99,462 @@
    		height: auto !important;
    }
 
+   #categories1{
+	   position: relative;
+	   height: 800px;
+   }
+   .leftdiv{
+     background-color:skyblue;
+     height: auto;
+
+	 left:0;
+     
+   }
+   .rightdiv{
+     
+
+     height: auto;
+     right: 0;
+   }
+   
+  /* categories */
+   
+	.leftdiv_old{
+     background-color:skyblue;
+     height: 90%;
+	 position: absolute;
+	 left:0;
+     
+   }
+   .rightdiv_old{
+     
+	 position: absolute;
+     height: 90%;
+     right: 0;
+   }
+	
+    .cards{
+      transform-style: preserve-3d;
+      perspective: 500px;
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+	  margin-top: 50px;
+	  z-index: 40;
+    }
+    
+    .mycard{
+	  z-index: 50;
+      width: 250px;
+      height: 40px;
+      cursor: pointer;
+      margin: 2%;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 40px;
+      color: #000;
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+      
+    }
+    .cardimg{
+     
+     width: 300px;
+     margin-top: 20px;
+     object-fit: cover;
+   }
+   
+   .topic{
+      background-color:mediumvioletred;
+      
+      
+    }
+    .topic h2{
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      font-weight: bolder;
+	  color: #fff;
+      
+    }
+    .banner_content{
+     width: 100%;
+     height: 90%;
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     padding-top: 5%;
+     color: yellow;
+     justify-content: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+     
+    }
+    .project_cards{
+      background-color: var(--bgindigo);
+      color: #fff;
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-sizing: border-box;
+      box-shadow:0 5px 10px #000 ;
+      cursor: pointer;
+      position: relative;
+      
+    }
+    .project_title{
+      position: relative;
+      height: 50px;
+      line-height: 50px;
+    }
+    .project_title h4{
+     margin-left: 30px;
+     color: #fff;
+     font-size: 18px;
+     line-height: 50px;
+    }
+    .project_title .down i{
+      color: #fff;
+    }
+    .pro_body{
+      position: relative;
+      background-color: #ec90e0;
+      display: none;
+      height: 220px;
+      border-bottom-left-radius: 5px;
+	  border-bottom-right-radius: 5px; 
+      overflow-y: auto;
+      justify-content: center;
+    }
+    .pro_body p{
+      
+      display: block;
+      top: 5%;
+      padding: 0;
+      margin: 0;
+    }
+    .proimg{
+      position: relative;
+      object-fit: contain;
+    }
+    .timebox{
+     position: absolute;
+     right: 30px;
+     top: 10px;
+     width: 180px;
+     height: 30px;
+     border-radius: 5px;
+     border: #ec90e0 2px solid;
+     background-color: aqua;
+     font-size: 14px;
+     font-weight: bold;
+     color: black;
+     text-align: center;
+     line-height: 30px;
+     cursor: default;
+   }
+   /* schedule */
+   
+   @media (max-width: 1200px){
+     .project_title .timebox{
+       
+       position: absolute;
+       right: 5px;
+       top: -35px;
+       width: 160px;
+       height: 30px;
+       border-radius: 5px;
+       border: #ec90e0 2px solid;
+       background-color: aqua;
+       font-size: 12px;
+       color: black;
+       text-align: center;
+       line-height: 30px;
+       cursor: default;
+   
+     }
+	 .cards{
+		 margin-top: 0px;
+	 }
+   }
+   @media(max-width:995px){
+	   #categories{
+			height:1000px;
+	   }
+	   .mycard{
+		   font-size: 14px;
+	   }
+   }
+     @media (max-width: 500px){
+   	#categories{
+      
+    
+      height:1000px;
+     
+ 
+     }
+	 .cards{
+		 margin-top: 0px;
+	 }
+	 .category-title h2{
+		 font-size: 18px;
+	 }
+   .mycard{
+      width: 180px;
+      height: 20px;
+      font-size: 6px;
+      line-height: 20px;
+      }
+      .cardimg{
+       
+       width: 150px;
+       margin-top: 10px;
+       object-fit: cover;
+     }
+     .topic h2{
+       height: 40px;
+       text-align: center;
+       line-height: 40px;
+       justify-content: center;
+       align-items: center;
+       font-size: 18px;
+       font-weight: bolder;
+       color: #fff;
+     }
+     .pro_body{
+       position: relative;
+       background-color: #ec90e0;
+       transition: 4s;
+       display: none;
+       padding: 5%;
+       height: 420px;
+       border-bottom-left-radius: 5px;
+	   border-bottom-right-radius: 5px;
+       overflow-y: auto;
+       justify-content: center;
+     }
+     .pro_body p{
+ 
+       display: block;
+       top: 5%;
+       padding: 0;
+       margin: 0;
+     }
+     .proimg{
+       position: relative;
+       object-fit: contain;
+     }
+     .project_title .timebox{
+       
+       position: absolute;
+       right: 5px;
+       top: -10px;
+       width: 50px;
+       height: 10px;
+       border-radius: 3px;
+       border: #ec90e0 1px solid;
+       background-color: aqua;
+       font-size: 4px;
+       color: black;
+       text-align: center;
+       line-height: 10px;
+       cursor: default;
+   
+     }
+     .project_title h4{
+         margin-left: 30px;
+         color: #fff;
+         font-size: 12px;
+         line-height: 50px;
+     }
+     
+    }
+	/* @media(max-width:875px & min-width:765px){
+	#categories{
+      margin-top: 2%;
+      margin-left: 0%;
+      margin-right: 0%;
+      background:rgb(11, 0, 36);
+      padding-bottom: 10%;
+      height:1000px;
+      position: relative;
+      justify-content: center;	
+      align-items: center;
+ 
+     }
+	} */
+    
+    .active_card{
+     background: rgba(17, 1, 1, 0.25)!important;
+    }
+    .mycard:hover{
+      transform: scale(1.1);
+      transition: 1.6s all;
+      
+    }
+    .card_container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+    }
+   
+  
+    .categoryCard{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+   
+   
+   
+
+   /* common styles */
+    .inactive{
+      display: none;
+    }
+ 
+    .active{
+      display: flex;
+     
+    }
+    
+    
+    .visible{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+ 
+    /* overview styles*/
+
+
+    /* #about{
+      background-color: magenta;
+      border: crimson solid 5px;
+      margin: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 5px 10px #ec90e0;
+    } */
+   #textdiv{
+      background-color: darkslateblue;
+      padding: 20px;
+      position: relative;
+      transition: 1s all ease;
+      animation: borderAnimation;
+     }
+   #textdiv::before{
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 0;
+     height: 0;
+     border-bottom: 3px solid transparent;
+     border-left: 3px solid transparent;
+     transition: 2s all ease;
+   }
+   
+     #textdiv::after{
+     content: "";
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 0;
+     height: 0;
+     border-right: 3px solid transparent;
+     border-top: 3px solid transparent;
+     transition: 2s all ease;
+   }
+   #textdiv:hover::after,
+   #textdiv:hover::before
+   {
+     border-color:orangered;
+     width: 100%;
+     height: 100%;
+   }
+ 
+   #overviewimg{
+     width: 40%;
+     height: 40%;
+     margin-top: 10%;
+   }
+   /* schedule */
+   ul.timeline {
+       list-style-type: none;
+       position: relative;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ 
+   }
+   ul.timeline:before {
+     content: ' ';
+     background: red;
+     display: inline-block;
+     position: absolute;
+     left: 29px;
+     width: 2px;
+     height: 100%;
+     
+   }
+   ul.timeline > li {
+     margin: 20px 0;
+     padding-left: 20px;
+   }
+   ul.timeline > li:before {
+     content: ' ';
+     background:red;
+     display: inline-block;
+     position: absolute;
+     border-radius: 50%;
+     border: 3px solid white;
+     left: 20px;
+     width: 20px;
+     height: 20px;
+     
+   }
+   ul.timeline > li > p {
+     color: blue;
+     margin-top: 10px;
+   }
+   .prodetails{
+     color: blue;
+   }
+   .prodetails .chips{
+     position: relative;
+     margin-left: 20px;
+     background-color: darkslateblue;
+     border-radius: 5px;
+     border: 1px solid white;
+     width: 150px;
+     font-size: 14px;
+     text-align: center;
+ 
+   }
+   ul.timeline > li > h4 {
+     color:red;
+     font-size: 24px;
+     font-weight: bold;
+   }
+   ul.timeline > li > span{
+     position: relative;
+     margin-left: 30px;
+     margin-bottom: 10px;
+   }
+
+ 
 </style>
 
 <body>
@@ -174,12 +640,13 @@
 </div>
 
 <!--about-->
+
+<!--about-->
 <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
 
-	<div class="container">
-		<div class="row no-gutters">
-		<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/home/overview.jpg);">
-		</div>
+	<div class="container mt-2">
+		<div class="row">
+		<img src="img/home/overview.jpg" class="img-responsive col-10 col-md-5"  style="background-size: contain;">
 		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
 		<div class="heading-section mb-5 pt-5 pl-md-5">
 		<div class="pr-md-5 mr-md-5">
@@ -194,15 +661,729 @@
 
 </section>
 
+
+<!-- <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
+	
+	<div class="container" id="overview_div">
+		<div class="row no-gutters">
+		<img src="img/home/overview.jpg" id="overviewimg">
+		<div class="col-md-7 wrap-about py-md-5 ftco-animate" >
+		<div class="heading-section mb-5 pt-5 pl-md-5">
+		<div class="pr-md-5 mr-md-5">
+		<h2 class="mb-4" style="color:red">Overview</h2>
+		</div>
+		
+		<p style="text-align: justify; color: rgb(255, 255, 255);font-size: 18px;" id="textdiv">
+			
+			EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. 
+			It presents you with the research projects of the undergraduates of the Department of Computer 
+			Engineering. ESCaPe 2021 is the 5th symposium that is organized by the department and this time 
+			symposium is open for a broader audience and aims to build a platform for the undergraduates to 
+			present their research ideas to the industry and academic community.</p>
+
+		</div>
+		</div>
+		</div>
+	</div>
+
+</section> -->
+<!-- 
+<section id="categories" class="ftco-section ftco-no-pt ftco-no-pb mt-2">
+	
+	<div class="container row">
+		<div class="leftdiv_old col-8">
+			<span class="categoryCard active ftco-animate" id="banner1">
+				<div class="topic fadeInUp text-center col-12"><h2>Embedded Systems</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/embedded.png'); display: cover;">
+					<div class="project_cards row">
+						<div class="project_title col-12" id="embbtn1"><h4>Presentation of the Research Articles</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+							
+						</div>
+						<div class="pro_body col-12" id="emb1">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="project_cards row">
+						<div class="project_title col-12" id="embbtn2"><h4>project 2</h4>
+							<span class="timebox">09:00 am - 09:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="emb2">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="embbtn3"><h4>project 3</h4>
+							<span class="timebox">10:00 am - 10:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="emb3">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="embbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="emb4">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner2">
+				<div class="topic fadeInUp text-center col-12"><h2>Software</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/iot.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="softbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="soft1">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="soft2">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="soft3">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="softbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body col-12" id="soft4">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+	
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner3">
+				<div class="topic fadeInUp text-center col-12"><h2>Data & Vision</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/brain.png');">
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="dv1">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="dv2">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="dv3">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="dvbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body col-12" id="dv4">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+	
+			</span>
+			<span class="categoryCard inactive ftco-animate" id="banner4">
+				
+				<div class="topic fadeInUp text-center col-12"><h2>Networking</h2></div>
+				<div class="banner_content" style="background-image: url('img/sample/network.png'); display: cover;">
+					<div class="project_cards">
+						<div class="project_title" id="netbtn1"><h4>project 1</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="net1">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn2"><h4>project 2</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="net2">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn3"><h4>project 3</h4>
+							<span class="timebox">08:00 am - 08:30 am</span>
+						</div>
+						<div class="pro_body col-12" id="net3">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="project_cards">
+						<div class="project_title" id="netbtn4"><h4>project 4</h4>
+							 <span class="timebox">08:00 am - 08:30 am</span></div>
+						<div class="pro_body col-12" id="net4">
+							<div class="row">
+								<img src="img/project_1/main.jpg" class="proimg col-sm-12 col-md-4 col-lg-4">
+								<p class="col-sm-12 col-md-8 col-lg-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore provident facilis ad ullam autem, aperiam officia eaque labore aliquam at, quos alias ea voluptas amet odit aspernatur commodi delectus fugiat.
+
+								</p>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+	
+			</span>
+		</div>
+		<div class="rightdiv_old col-4 justify-content-center">
+			<div class="col-md-7 ftco-animate">
+				<div class="heading-section mt-3 category-title">
+					
+					<h2 class="fadeInUp ftco-animate text-center" style="color: darkblue;">Categories</h2>
+					
+				</div>
+				<div class="category_desc ml-0 ml-md-4 mb-lg-9" style="color: mediumblue;">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt impedit, pariatur, eum necessitatibus numquam at ex labore soluta architecto unde doloribus libero eveniet repellendus culpa nisi blanditiis assumenda error sit.</p>
+
+				</div>
+			</div>
+
+			<div class="cards active mt-lg-10" id="cardV">
+				<span class="mycard active btn-success" id="category1">Embedded Systems
+	
+				</span>
+				<span class="mycard active btn-primary" id="category2">Software
+					
+				</span>
+				<span class="mycard active btn-primary" id="category3">Data & Vision
+					
+				</span>
+				<span class="mycard active btn-primary" id="category4">Networking
+					
+				</span>
+			</div>
+		</div> -->
+<!-- 		
+		<div class="cards active" id="cardV">
+			<span class="mycard active" id="category1">Embedded Systems
+				<img src="img/sample/embedded.png" class="cardimg">
+			</span>
+			<span class="mycard active" id="category2">Software
+				<img src="img/sample/iot.png" class="cardimg">
+			</span>
+			<span class="mycard active" id="category3">Data & Vision
+				<img src="img/home/bg_1.jpg" class="cardimg">
+			</span>
+			<span class="mycard active" id="category4">Networking
+				<img src="img/home/bg_11.jpg" class="cardimg">
+			</span>
+		</div> -->
+<!-- 		
+	</div>
+</section> -->
+
+<section id="categories" class="ftco-section">
+	<style>
+		#categories{
+    
+			position: relative;
+			
+
+		}
+		.cat-describing{
+			font-size: 14px;
+		}
+		.cat-title{
+			font-size: 18px;
+		}
+		@media(max-width: 500px){
+			.cat-describing{
+				font-size: 10px;
+			}
+			.cat-title{
+				font-size: 15px;
+			}
+		
+		}
+		@media(max-width:300px){
+			#categories{
+				
+				position: relative;
+				margin-bottom: 400px;
+
+			}
+		}
+		
+		
+	</style>
+	<div class="col-12 ftco-animate text-center">
+		<h1 class="fadeInUp ftco-animate" style="color: darkblue;">Categories</h1>
+		
+	</div>
+	<div class="row ml-4">
+		<div class="col-xs-12 col-md-6">
+				<div class="row">
+					<span class="ftco-animate">
+						<div class="row justify-content-center" >
+							<div class="card col-xs-10 col-offset-xs-1 col-sm-10 col-offset-sm-1 col-md-5  bg-success m-1 m-lg-2" style="cursor: pointer;" id="category1">
+								<div class="card-body p-0 p-lg-3 text-white">
+									
+								<h4 class="text-white  cat-title">Embedded Systems</h4>
+								<p class="cat-describing">
+									An Embedded System integrates software and hardware jointly and specifically
+									designed to provide given functionalities, which are often critical.
+									It was born with the invention of microcontrollers and since then it has evolved into
+									various forms, from primarily being designed for machine control applications
+									to various other new verticals with the convergence of communications.
+								</p>
+								</div>
+							</div>
+							<div class="card col-xs-10 col-offset-xs-1 col-sm-10 col-offset-sm-1 col-md-5 m-1 m-lg-2 bg-primary" style="cursor: pointer;" id="category2">
+								<div class="card-body  p-0 p-lg-3 text-white">
+									
+								<h4 class="text-white cat-title">Software Engineering</h4>
+								<p class="cat-describing">
+									Software engineering researchs focus on better ways to develop and evaluate the software.
+									They are motivated from practical problems, and the key objectives of the reseach are often 
+									the quality, cost, and timeliness of software projects.
+								</p>
+								</div>
+							</div>
+						
+							
+								<div class="card col-xs-10 col-offset-xs-1 col-sm-10 col-offset-sm-1 col-md-5 m-1 m-lg-2 bg-primary"  style="cursor: pointer;" id="category3">
+									<div class="card-body  p-0 p-lg-3 text-white">
+										
+									<h4 class="text-white cat-title">Data & Vision</h4>
+									<p class="cat-describing">
+										Computer vision is a subfield Of AI which uses images, objects, and patterns
+										to find solutions. Machine learning algorithms are the critical technology 
+										behind computer vision which gives the computer he natural capability to sense
+										and understand data in the form of images, graphic documents, and videos.
+									</p>
+									</div>
+								</div>
+								<div class="card col-xs-10 col-offset-xs-1 col-sm-10 col-offset-sm-1 col-md-5  bg-primary m-1 m-lg-2"  style="cursor: pointer;" id="category4">
+									<div class="card-body  p-0 p-lg-3 text-white">
+										
+									<h4 class="text-white  cat-title">Networking</h4>
+									<p class="cat-describing">
+										Computer networking is an engineering discipline that aims to study
+										and analyze the communication process among various computing devices
+										or computer systems that are linked, or networked, together to exchange information and share resources.
+									</p>
+									</div>
+								</div>
+							
+							
+							</div>
+						
+					</span>
+				</div>
+			
+		</div>
+		<div class="col-xs-12 col-md-6 justify-content-center mt-lg-5">
+			
+
+			<div class="justify-content-center active row" id="banner1">
+				<span class="card active btn-primary m-2 col-10" id="emb1">
+					Embedded Systems project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb2">
+					Embedded Systems project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb3">
+					Embedded Systems project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="emb4">
+					Embedded Systems project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner2">
+				<span class="card active btn-primary m-2 col-10" id="soft1">
+					Software Engineering project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft2">
+					Software Engineering project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft3">
+					Software Engineeringproject3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="soft4">
+					Software Engineering project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner3">
+				<span class="card active btn-primary m-2 col-10" id="data1">
+					project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data2">
+					project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data3">
+					project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="data4">
+					project4<br>line2
+				</span>
+			</div>
+			<div class="justify-content-center inactive row" id="banner4">
+				<span class="card active btn-primary m-2 col-10" id="net1">
+					Networking project1<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net2">
+					Networking project2<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net3">
+					Networking project3<br>line2
+				</span>
+				<span class="card active btn-primary m-2 col-10" id="net4">
+					Networking project4<br>line2
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--schedule-->
 <section id="schedule" class="ftco-section">
 
 	<div class="container">
-	<div class="row justify-content-center mb-5">
-		<div class="col-md-7 text-center heading-section ftco-animate">
-		<h2 class="mb-3">ESCaPe 2020 Schedule</h2>
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+			<h2 class="mb-3" style="color:darkblue; font-weight: bold;">ESCaPe 2021 Schedule</h2>
+			</div>
 		</div>
-	</div>
+		<!-- <div class="card_container">
+			<div class="sh_cards">
+				<div class="sh_card">
+					<h3 style="color: #fff;">Commencement of ESCaPe 2021</h3>
+					<span class="timebox">08:00 am - 08:30 am</span>
+					<div class="icon_background">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa-stack-1x"><h4>1</h4></i>
+						</span>
+						
+					</div>
+				</div>
+				<div class="sh_card">
+					
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>2</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+						
+					</div>
+					<span class="timebox">08:00 am - 08:30 am</span>
+				</div>
+				<div class="sh_card">
+					
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>3</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+						<span class="timebox">08:00 am - 08:30 am</span>
+					</div>
+					
+				</div>
+				<div class="sh_card">
+					<img src="img/home/person_1.jpg" class="sh_img">
+					<div class="sh_card_items">
+						<h3 style="color: #fff;"><div class="sh_cards">
+							Presentation of the Research Articles
+						</h3>
+						<div class="icon_background">
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>4</h4></i>
+							</span>
+							
+						</div>
+						<ul>
+							<li>test1</li>
+							<li>test2</li>
+							<li>test3</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			 -->
+
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<ul class="timeline">
+						<li>
+							<!-- <span class="fa-stack fa-lg">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa-stack-1x"><h4>3</h4></i>
+							</span> -->
+							<h4>Commencement of ESCaPe 2020
+								<div class="col-12">
+									<span class="badge badge-fill badge-primary">08:00 am - 08:30 am</span>
+								</div>
+								
+							</h4>
+							
+							<br>
+							
+						</li>
+						<li>
+							
+								<h4>Presentation of the Research Articles
+									<div class="col-12">
+										<span class="badge badge-fill badge-primary">08:00 am - 08:30 am</span>
+									</div>
+								</h4>
+						
+							
+							
+								<img src="img/home/projects_1.jpg" class="cardimg ml-5">
+							<p>
+								<ul>
+									<li class="prodetails row mt-1">
+										<div class="col-12 col-md-9">01: A Retinex based GAN Pipeline to Utilize Paired and Unpaired Datasets for Enhancing Low Light Images
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Data & Vision</span>
+										</div>
+										<!-- <h6 class="chips">Data & Vision</h6> -->
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											02: Multi-Agent Reinforcement Learning in Sparsely Connected Cooperative Environments
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Embedded Systems</span>
+										</div>
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											03: SwarmLib- Programming Framework for Robot Swarms
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Software</span>
+										</div>
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											04: Dynamic Difficulty Adjustment (DDA) in FPS games using Strategy Analysis
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Embedded Systems</span>
+										</div>
+									</li>
+								</ul>
+							</p>
+						</li>
+						<li>
+							<h4>What is Computer Science?
+								<div class="col-12">
+									<span class="badge badge-fill badge-primary">08:00 am - 08:30 am</span>
+								</div>
+							</h4>
+							
+							<img class="cardimg" src="img/speakers/pandu_ragan.jpg">
+							<p>
+								All are welcome. The prerequisites are enthusiasm, open mind and curiosity…
+
+								Prof. C. Pandu Rangan is recognized for his immense contribution to the field of scientific research especially in the areas of Restricting the problem domain, Approximate algorithm design, Randomized Algorithms, Parallel, and VLSI Algorithms, and Applied Cryptography.
+							</p>
+						</li>
+						<li>
+							<h4>Presentation of the Research Articles
+								<div class="col-12">
+									<span class="badge badge-fill badge-primary">08:00 am - 08:30 am</span>
+								</div>
+							</h4>
+							<img src="img/home/projects_2.jpg" class="cardimg ml-5">
+							<p>
+								<ul>
+									<li class="prodetails row mt-1">
+										<div class="col-12 col-md-9">01: A Retinex based GAN Pipeline to Utilize Paired and Unpaired Datasets for Enhancing Low Light Images
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Data & Vision</span>
+										</div>
+										<!-- <h6 class="chips">Data & Vision</h6> -->
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											02: Multi-Agent Reinforcement Learning in Sparsely Connected Cooperative Environments
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Embedded Systems</span>
+										</div>
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											03: SwarmLib- Programming Framework for Robot Swarms
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Software</span>
+										</div>
+									</li>
+									<li class="prodetails row mt-3">
+										<div class="col-12 col-md-9">
+											04: Dynamic Difficulty Adjustment (DDA) in FPS games using Strategy Analysis
+										</div>
+										<div class="col-3">
+											<span class="badge badge-fill badge-primary" style="color: #000;">Embedded Systems</span>
+										</div>
+									</li>
+								</ul>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+		
+
+<!-- 	
 	<div class="ftco-schedule">
 	<div class="row">
 	<div class="col-md-1 nav-link-wrap text-center text-md-right"></div>
@@ -210,7 +1391,7 @@
 		<div class="tab-content" id="v-pills-tabContent">
 		<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
 		<div class="icon_background">
-            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #17a2b8;"></i>
+            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #3a17b8;"></i>
         </div>
 		<div class="speaker-wrap ftco-animate d-md-flex detail-info">
 			<div class="text">
@@ -220,7 +1401,7 @@
 		</div>
 
 		<div class="icon_background">
-            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #17a2b8;"></i>
+            <i class="fa fa-clock-o fa-2x quetion_icon_tag" aria-hidden="true" style="color: #3a17b8;"></i>
         </div>
 		<div class="speaker-wrap ftco-animate d-md-flex detail-info">
 			<div class="img speaker-img img_project_div" style="background-image: url(img/home/projects_2.jpg);"></div>
@@ -320,7 +1501,7 @@
                 	<a class="project_name"><b>12: </b> Stock Market Prediction using SVM, LSTM and Linear Regression</a>
                 </li>
                 <li>
-                	<a class="project_name"><b>13: </b> Real Time Dynamic Object Tracking with a Pan and Tilt Camera Setup</a>
+                	<a class="project_name"><b>13: </b> Real Time Dynamic Object Tracking with a Pan and Tilt Camera Setup</a> -->
 <!--                 	<span class="time author_name">
                 		<a class="badge badge-dark time_box"><i class="fa fa-user" aria-hidden="true"></i> Chamara Gunarathne</a>
                 	</span>
@@ -330,7 +1511,7 @@
                 	<span class="time author_name">
                 		<a class="badge badge-dark time_box"><i class="fa fa-user" aria-hidden="true"></i> Chamara Gunarathne</a>
                 	</span> -->
-                </li>
+                <!-- </li>
               </ul>
 			</div>
 		</div>
@@ -343,7 +1524,7 @@
 			<h2><a>Awards Ceremony and the Conclusion of ESCaPe 2020</a></h2>
 			<span class="time"><a class="badge badge-info time_box">2:15 pm - 2:30 pm</a></span>
 			</div>
-		</div>
+		</div> -->
 
 <!-- 		<div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
 		<div class="speaker-wrap ftco-animate d-md-flex">
@@ -430,11 +1611,11 @@
 		</div>
 		</div>
 		</div> -->
-		</div>
+		<!-- </div>
 	</div>
 	<div class="col-md-1 nav-link-wrap text-center text-md-right"></div>
 	</div>
-	</div>
+	</div> -->
 	</div>
 
 </section>
@@ -932,5 +2113,61 @@
 		$('.reg_link').css('background-color','red');
 		$('.reg_link a').css('color','white');
 	});
+
+	let mycard= document.getElementById('cardV');
+	let card1= document.getElementById('category1');
+	let card2= document.getElementById('category2');
+	let card3= document.getElementById('category3');
+	let card4= document.getElementById('category4');
+
+	let banner1= document.getElementById('banner1');
+	let banner2= document.getElementById('banner2');
+	let banner3= document.getElementById('banner3');
+	let banner4= document.getElementById('banner4');
+
+	card1.addEventListener('click', ()=>{
+		banner1.classList.replace('inactive', 'active');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('active', 'inactive');
+		card1.classList.replace('bg-primary', 'bg-success');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+		
+	})
+	card2.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('inactive', 'active');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('active', 'inactive');
+		card2.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+	
+	})
+	card3.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('inactive', 'active');
+		banner4.classList.replace('active', 'inactive');
+		card3.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card4.classList.replace('bg-success', 'bg-primary');
+	
+	})
+	card4.addEventListener('click', ()=>{
+		banner1.classList.replace('active', 'inactive');
+		banner2.classList.replace('active', 'inactive');
+		banner3.classList.replace('active', 'inactive');
+		banner4.classList.replace('inactive', 'active');
+		card4.classList.replace('bg-primary', 'bg-success');
+		card1.classList.replace('bg-success', 'bg-primary');
+		card2.classList.replace('bg-success', 'bg-primary');
+		card3.classList.replace('bg-success', 'bg-primary');
+	
+	})
 
 </script>
