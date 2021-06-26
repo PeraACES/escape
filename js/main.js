@@ -295,7 +295,7 @@
 
 function makeTimer() {
 
-		var endTime = new Date("24 June 2021 8:30:00 GMT+05:30");			
+		var endTime = new Date("24 July 2021 8:30:00 GMT+05:30");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
