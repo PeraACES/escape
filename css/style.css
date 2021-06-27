@@ -60,7 +60,8 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { 
   display: block;
@@ -6557,7 +6558,13 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 1.5rem !important;
+  border-radius: 5% !important; 
+}
+
+.mb-4::after{
+     border-radius: 5% !important; 
+}
 
 .ml-4,
 .mx-4 {
