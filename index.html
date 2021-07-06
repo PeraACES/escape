@@ -32,40 +32,33 @@
 </head>
 
 <style type="text/css">
-
-
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
 		color: magenta;
 		font-weight: bold;
 	}
-
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
 	    color: teal;
 	}
-
   .detail-info{
     border: 2px solid lightskyblue;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
   }
-
   .quetion_icon_tag{
     position: absolute;
     left: 2px;
     top: -14px;
   }
-
   .icon_background{
   	z-index: 1;
     position: absolute;
     left: -50px;
-	top: -10px;
+		top: -10px;
     width: 40px;
     height: 40px;
-
-	justify-content: center;
-	align-items: center;
+		justify-content: center;
+		align-items: center;
   }
   .icon_background span{
 	  position: absolute;
@@ -74,17 +67,12 @@
 	  justify-content: center;
 	  align-items: center;
   }
-
-
   .blog-entry .meta > div a {
     color: white;
    }
   .blog-entry .meta > div a:hover {
     color: white;
    }
-
-
-
    .author_name{
    		display: inline !important;
    }
@@ -94,47 +82,30 @@
     	display: block;
     	text-align: initial;
    }
-
-   
    .leftdiv{
      background-color:skyblue;
      height: auto;
-
-	 left:0;
-
+		 left:0;
    }
    .rightdiv{
-
-
      height: auto;
      right: 0;
    }
-
-  
-
-   
-
 
    /* common styles */
     .inactive{
       display: none;
     }
-
     .active{
       display: flex;
-
     }
-
-
     .visible{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
     }
 
-
     /* overview styles*/
-
 
     /* #about{
       background-color: magenta;
@@ -143,8 +114,7 @@
       box-sizing: border-box;
       box-shadow: 0 5px 10px #ec90e0;
     } */
-   
-   
+
    /* schedule */
    ul.timeline {
      list-style-type: none;
@@ -152,7 +122,6 @@
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
-
    }
    ul.timeline:before {
      content: ' ';
@@ -163,7 +132,6 @@
      margin-left: 20px;
      width: 2px;
      height: 100%;
-
    }
    ul.timeline > li {
      margin: 20px 0;
@@ -181,14 +149,11 @@
      margin-top: -30px;
      width: 20px;
      height: 20px;
-
    }
    ul.timeline > li > p {
      color: blue;
      margin-top: 10px;
    }
-   
-   
    ul.timeline > li > h4 {
      color:red;
      font-size: 24px;
@@ -207,7 +172,6 @@
 		object-fit: cover;
 	}
    .cardimg{
-
 		width: 300px;
 		margin-top: 20px;
 		object-fit: cover;
@@ -215,13 +179,13 @@
 	.overviewimg{
      width: 30%;
 	 height: 30%;
-     
+
    }
 	@media (max-width: 1200px) and (min-width:750px){
 		.overviewimg{
 			width: 20%;
 			height: 20%;
-			
+
 		}
 		.catimg{
 			width: 300px;
@@ -236,7 +200,6 @@
 			object-fit: cover;
 		}
       .cardimg{
-       
        width: 150px;
        margin-top: 10px;
        object-fit: cover;
@@ -244,10 +207,9 @@
 	 .overviewimg{
 			width: 100%;
 			height: 100%;
-			
+
 		}
 	}
-
 
 </style>
 
@@ -259,8 +221,6 @@
 
 <!-- <a class="navbar-brand" href="index.html">ESCaPe 2020</a> -->
 
-
-    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="oi oi-menu"></span> Menu
 	</button>
@@ -270,42 +230,23 @@
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
 		<li class="nav-item"><a href="#about" class="nav-link text-white">Overview</a></li>
-        <li class="nav-item"><a href="#categories" class="nav-link text-white">Categories</a></li> 
 		<li class="nav-item"><a href="#schedule" class="nav-link text-white">Schedule</a></li>
 		<li class="nav-item"><a href="#speakers" class="nav-link text-white">Speakers</a></li>
-		<!-- <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li> -->
 		<li class="nav-item"><a href="#committee" class="nav-link text-white">Organizing committee</a></li>
-        
-    
-        
-        
-        
-	</ul>
-
+  </ul>
 	</div>
 	</div>
 
 </nav>
-    
-    
-    
     <script>
-    window.addEventListener(
-    'scroll', function (){
-        
-        let header = document.querySelector('header');
-        let windowPos = window.screenY > 0;
-        header.classList.toggle('srolling-active',windowPos);
-        
-    })
-    
-    
-    
+	    window.addEventListener(
+	    'scroll', function (){
+	        // let header = document.querySelector('header');
+	        // let windowPos = window.screenY > 0;
+	        //header.classList.toggle('srolling-active',windowPos);
+	    })
     </script>
-    
-    
-    
-    
+
 <div class="hero-wrap" style="background-image: url('img/home/bg_1.jpg');" data-stellar-background-ratio="0.5">
 
 	<div class="overlay"></div>
@@ -317,12 +258,12 @@
 
 			<h1 style="color: white;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                 <span style="text-transform: unset; color: white;">ES<span style="text-transform: unset; color: white;">Ca</span>Pe <span style="text-transform: unset; color: white;">20</span>21</span> </h1>
-                
-                
-                
-            <h2> <br><span style="text-transform: unset; color: white;">Engineering Students Conference at 
+
+
+
+            <h2> <br><span style="text-transform: unset; color: white;">Engineering Students Conference at
               </span> <span style="text-transform: unset; color: magenta;">Peradeniya 2021</span>                  </h2>
-			
+
 			<p style=" text-transform: unset;color: teal;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
 				<span class="icon-calendar mr-2 "></span>24 July 2021 - Zoom Webinar</p>
 			<!--	<h1 style="color: red;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
@@ -333,7 +274,7 @@
 				<div class="time pl-3" id="hours"></div>
 				<div class="time pl-3" id="minutes"></div>
 				<div class="time pl-3" id="seconds"></div>
-			</div> 
+			</div>
 			<br>
 			<!-- <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#call_for_paper_div" style="margin-top:10px;">
 				<span class="time">
@@ -346,7 +287,7 @@
 		<div class="col-lg-4 col-md-6 mt-0 mt-md-5" style="opacity: 80%;">
 
 			<form class="request-form ftco-animate">
-	
+
 				<h2 style="text-decoration: underline;">Registration</h2>
 				<div class="form-group">
 					<p style="text-align: justify;font-size: 16px;color: black;font-weight: bold;">To join with us at ESCaPe 2021 register through the following link:</p>
@@ -355,15 +296,15 @@
 					</p>
 					<p style="text-align: justify;font-size: 16px;margin-top: 30x;color: black;font-weight: bold;">We will continue to update ESCaPe 2021 with more links throughout May! Keep checking back in!</p>
 				</div>
-	
+
 			</form>
-	
+
 			</div>
-    
-            
-            
-            
-        
+
+
+
+
+
 
 		</div>
 	</div>
@@ -379,9 +320,9 @@
 		<div class="heading-section mb-5 pt-5 pl-md-5">
 		<div class="pr-md-5 mr-md-5">
 		<h2 class="mb-4", style="text-transform: unset; color: teal;">Overview</h2>
-            
-    
-            
+
+
+
 		</div>
 		<p style="text-align: justify;">EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. It presents you with the research projects of the undergraduates of the Department of Computer Engineering. ESCaPe 2020 is the 5th symposium that is organized by the department and this time the symposium is open for a broader audience and aims to build a platform for the undergraduates to present their research ideas to the industry and academic community.</p>
 
@@ -395,7 +336,7 @@
 
 
 <section id="categories_div" style="margin-top: 100px; margin-bottom: 100px;">
-	
+
 	<div class="container">
 		<div class="row mb-md-2 mt-4">
 			<div class="col-md-6 d-flex justify-content-center p-5">
@@ -405,17 +346,17 @@
 			<div class="col-md-6 p-md-5">
 				<h2 class="text-primary"><strong>Accelerated AI</strong></h2>
 				<h5 class="text-info">
-					Artificial Intelligence has now become a mainstream technology 
-					in real-world applications and large-scale investments. AI offers 
-					solutions and opportunities for organizations across all sectors 
-					which can accelerate business processes, simplify IT operations and 
-					uncover new insights etc. Every application of AI is attracting the 
-					tech industry and ensuring excellent performance. The main facets which 
-					are accelerating the rate of innovation within the area of Artificial 
-					Intelligence are Advanced computing architecture, Progress in Deep Neural 
-					Networks and Data Analysis performance. Current research and the efforts 
-					in various fields are advancing the innovation in artificial intelligence 
-					and large-scale computing. These trends will make AI technology the most 
+					Artificial Intelligence has now become a mainstream technology
+					in real-world applications and large-scale investments. AI offers
+					solutions and opportunities for organizations across all sectors
+					which can accelerate business processes, simplify IT operations and
+					uncover new insights etc. Every application of AI is attracting the
+					tech industry and ensuring excellent performance. The main facets which
+					are accelerating the rate of innovation within the area of Artificial
+					Intelligence are Advanced computing architecture, Progress in Deep Neural
+					Networks and Data Analysis performance. Current research and the efforts
+					in various fields are advancing the innovation in artificial intelligence
+					and large-scale computing. These trends will make AI technology the most
 					sought-after technology in the market and AI will reach its peak in near future.
 				</h5>
 			</div>
@@ -424,15 +365,15 @@
 			<div class="col-md-6 p-md-5">
 				<h2 class="text-primary"><strong>Data Driven AI</strong></h2>
 				<h5 class="text-info">
-					Artificial Intelligence, especially with machine learning, deep learning and 
-					advanced analytics can automate decision making and insight gathering in the 
-					data-driven world. Identifying patterns within data, based on mathematical and 
-					statistical models and making accurate assumptions over them is very important 
-					in modern science and those results are useful for many fields. By today, Data 
+					Artificial Intelligence, especially with machine learning, deep learning and
+					advanced analytics can automate decision making and insight gathering in the
+					data-driven world. Identifying patterns within data, based on mathematical and
+					statistical models and making accurate assumptions over them is very important
+					in modern science and those results are useful for many fields. By today, Data
 					Driven AI has amplified the value of data many times over.
-					Data Driven AI is becoming more and more a part of the activities traditionally 
-					covered by the engineering data analysis and simulation community. Recent 
-					improvements in the application of AI, machine learning and deep learning, have 
+					Data Driven AI is becoming more and more a part of the activities traditionally
+					covered by the engineering data analysis and simulation community. Recent
+					improvements in the application of AI, machine learning and deep learning, have
 					brought these technologies to the fore in every area of industry.
 
 				</h5>
@@ -465,7 +406,7 @@
 				<div class="col-12">
 					<ul class="timeline text-primary">
 						<li class="bg-white d-flex justify-content-center mb-5">
-							
+
 							<h4 class="mt-4 text-center">Commencement of the conference
 								<div class="col-12 d-flex justify-content-center">
 									<span class="badge badge-fill badge-primary d-flex justify-content-center">08:30 am
@@ -485,7 +426,7 @@
 								</div>
 							</h4><br>
 						</li>
-						
+
 						<li class="bg-white d-flex justify-content-center mb-5">
 							<h4 class="mt-4 text-center">Speech by Prof. Gemunu Herath,<br> Dean, Faculty of Engineering, University of Peradeniya
 								<div class="col-12 d-flex justify-content-center">
@@ -512,7 +453,7 @@
 						</li>
 
 						<li class="bg-white d-flex justify-content-center">
-						
+
 						<h4 class="mt-4">Student presentations - Session I
 						</h4>
 
@@ -546,7 +487,7 @@
 								</a>
 							</div>
 						</div>
-					
+
 						<div class="row mt-2 mb-2">
 							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">14:&nbsp;&nbsp;Mixed reality based simulation platform for swarm robotics
 								</a>
@@ -594,7 +535,7 @@
 									</span>
 								</div>
 							</h4><br>
-						</li>	
+						</li>
 						<li class="bg-white d-flex justify-content-center mb-5 row">
 							<h4 class="mt-4 text-center col-12">Panel Discussion with the industry professionals
 								<div class="col-12 d-flex justify-content-center">
@@ -621,7 +562,7 @@
 							</h4><br>
 						</li>
 						<li class="bg-white d-flex justify-content-center">
-						
+
 						<h4 class="mt-4 row">Student presentations - Session II
 						</h4>
 
@@ -655,7 +596,7 @@
 								</a>
 							</div>
 						</div>
-					
+
 						<div class="row mt-2 mb-2">
 							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">15:&nbsp;&nbsp;Embedded Machine Learning for Real-Time AI processing at the Edge
 								</a>
@@ -715,12 +656,12 @@
 
 						</ul>
 						</div>
-					</div>						
+					</div>
             	</ul>
-				
+
 			</div>
 		</div>
-	</div>   
+	</div>
 </div>
 
 </section>
@@ -729,21 +670,21 @@
 <section id="speakers" class="ftco-section ftco-no-pt ftco-no-pb">
 
 	<div class="row justify-content-center">
-        
+
 	<div class="col-12 d-flex justify-content-center mb-5">
-			
+
 				<h2 class="mb-3 text-center">Keynote speakers</h2>
-			
+
 		</div>
-        
-        
-        
-        
+
+
+
+
         <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="card col-sm-10 col-md-6 border-1">
-    
+
     <div class="row d-flex justify-content-center">
         <div class="col-sm-10 col-md-6">
           <img src="img/speakers/mano_sekram.jpg" alt="mano_sekram"  align="center" class="center">
@@ -752,12 +693,12 @@
 
 <!--  <h1>Mr. Mano Sekaram</h1>
   <p class="title">CEO and Co -Founder at 99X Technology and Founder at Startup X Foundrye</p> -->
-  
-    
-    
-    
-    
-    
+
+
+
+
+
+
     	<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
 					<div class="text pl-4">
 						<h1>Mr. Mano Sekaram</h1>
@@ -770,62 +711,62 @@
 						</ul>
 					</div>
 				</div>
-    
+
     <p style="text-align: justify; padding: 5px">Mano Sekaram is a serial tech entrepreneur and is the Chief Executive Officer (CEO) and Co-Founder of 99X Technology Ltd., an award-winning, high-quality digital product engineering company that specialises in delivering digital services to European markets. This company, under his stewardship, has been listed among the top 25 ‘Best Companies To Work For’ in Sri Lanka for seven consecutive years and has also been ranked among ‘Asia’s Best Workplaces’ for 2019.</p>
-    
+
     	<p style="text-align: justify; padding: 5px">Mano Sekaram is a serial tech entrepreneur and is the Chief Executive Officer (CEO) and Co-Founder of 99X Technology Ltd., an award-winning, high-quality digital product engineering company that specialises in delivering digital services to European markets. This company, under his stewardship, has been listed among the top 25 ‘Best Companies To Work For’ in Sri Lanka for seven consecutive years and has also been ranked among ‘Asia’s Best Workplaces’ for 2019.</p>
-    
-    
-    
+
+
+
     	<p style="text-align: justify; padding: 5px">He is also the founder of Startup X Foundry, one of Sri Lanka’s first tech start-up accelerators, which aims at taking Sri Lankan start-ups to the global stage by providing necessary guidance and support. He further influences Sri Lanka’s start-up ecosystem through the Lankan Angel Network (LAN), of which he is Chairman.</p>
 		<p style="text-align: justify; padding: 5px">Mano was appointed recently to the Board of the Information and Communication Technology Agency (ICTA) of Sri Lanka, which drives Sri Lanka’s digital transformation strategy as a catalyst for economic growth. He is also the past Chairman of the IT/BPM sector’s apex body, the Sri Lanka Association of Software and Service Companies (SLASSCOM).</p>
 		<p style="text-align: justify; padding: 5px">He was listed on LMD’s 100 Club for 2019, the A-List of Sri Lankan businesspeople who continue to drive the nation’s engine of growth.</p>
 		<p style="text-align: justify; padding: 5px">Considered to be an industry thought leader, Mano was awarded the ‘Lifetime Achievement Award’ at the National Best Quality Software Awards (NBQSA) 2014, by BCS, The Chartered Institute for IT, for his vast contributions to the ICT industry.</p>
-  
+
 
 </div>
-        
-        
-    
+
+
+
 
 	<br>
-        
-        
-        
-        
+
+
+
+
            <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-  
+
 <!--  <h1>Mr. Mano Sekaram</h1>
   <p class="title">CEO and Co -Founder at 99X Technology and Founder at Startup X Foundrye</p> -->
   <div class="card col-sm-10 col-md-6 border-1">
-      
+
     <div class="row d-flex justify-content-center">
         <div class="col-sm-10 col-md-6">
          <img src="img/speakers/pandu_ragan.jpg"  align="center" class="center">
         </div>
-        
+
     </div>
-     
-    
-    
-    
-    
+
+
+
+
+
     	<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
 					<div class="text pl-4">
 						<h1>Prof. C. Pandu Rangan</h1>
 						<span class="position">Professor at Department of Computer Science & Engineering, Indian Institute of Technology Madras, India</span>
 						<!-- <p>A small river named Duden flows by their place and supplies</p> -->
-					
+
 					</div>
 				</div>
-    
-    
-    
+
+
+
     <p style="text-align: justify; padding: 5px">Prof. C. Pandu Rangan is a Professor  of the Computer Science and Engineering Department at Indian Institute of Technology - Madras (IITM), India. Prof. C. Pandu Rangan has published over two hundred research papers in the following areas of Computer Science and Engineering:</p>
-    
+
 			<div class="row" style="padding: 50px">
 					<div class="col-md-6" style="display: inline;">
 		              <ul style="list-style-type: square; text-align: justify;display: inline; padding: 5px">
@@ -842,27 +783,27 @@
 		                <li>Game Theory and Graph Theory</li>
 		              </ul>
 					</div>
-                  </div> 
-    
-    
-    
+                  </div>
+
+
+
 		<p style="text-align: justify;margin-top: 15px; padding: 5px">His main research focus is on the design of pragmatic algorithms. He is interested in looking for pragmatic alternatives for the problems of practical interest in Graph Theory, Combinatorics, and Computational Geometry.</p>
 		<p style="text-align: justify; padding: 5px">He obtained his MSc from the University of Madras in 1977 and completed his Ph.D. from the Indian Institute of Science, Bangalore, India in the year 1984.</p>
 		<p style="text-align: justify; padding: 5px">He was awarded the Fellowship, Indian National Academy of Engineering in 2006. He also acted as a member of the board of directors in the International Association for Cryptologic Research (IACR) from 2002 - 2005. He was a member of the board of directors in the Society for Electronic Transaction and Security (SETS) from 2005 - 2007. He was in the editorial board for Lecture Notes in Computer Science Series (LNCS Series), Springer-Verlag, Germany, from 2005 - 2011, and for the Journal of Parallel and Distributed Computing during 2005 -2007. In recognition for professors "who have distinguished themselves and been recognized by their peers for their research and/or technology development, and who have excelled in teaching and service to the institute/nation/profession” Prof. C. Pandu Rangan has been awarded the Institute Chair Professor at IIT Madras in the year  2018.</p>
-    
-    
-    
-    
-    
-    
-   
-  
 
-</div>     
-        
-   
+
+
+
+
+
+
+
+
+</div>
+
+
 	</div>
-	
+
 
 </section>
 
@@ -999,23 +940,15 @@
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<div class="testimony-wrap text-center py-4 pb-5">
-					<div class="user-img mb-4" style="background-image: url(img/committee/upul.jpg)">
-					</div>
-					<div class="text pt-4">
-<!-- 					<p class="mb-4">She graduated with a B.Sc. (Hons) in Computer Engineering, University of Peradeniya  in the year 2012. She was a member of the Optimisation and Pattern Recognition Research Group of Melbourne School of Engineering, The University of Melbourne as a Ph.D. candidate from 2015-2018.</p> -->
-					<a href="http://www.ce.pdn.ac.lk/upul/"><p class="name">Dr. Upul Jayasinghe</p></a>
 				<a class="testimony-wrap text-center py-4 pb-5" href="http://www.ce.pdn.ac.lk/upul/" target="_blank" rel="noreferrer">
 					<div class="user-img mb-4" style="background-image: url(img/committee/upul.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Upul Jayasinghe</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Upul Jayasinghe</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-2"></div>
 		</div>
 	 	<div class="row justify-content-center mb-5">
 			<div class="col-md-7 text-center heading-section ftco-animate">
@@ -1028,9 +961,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/janaka.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-				<a href="http://www.ce.pdn.ac.lk/academic-staff/janaka-alawatugoda/">	<p class="name">Dr. Janaka Alwathugoda</p></a>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Janaka Alwathugoda</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1039,9 +971,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/damayanthi.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<a href="http://www.ce.pdn.ac.lk/academic-staff/damayanthi-herath/"><p class="name">Dr. Damayanthi Herath</p></a>
-					<span class="position">Lecturer</span>
+						<p class="name">Dr. Damayanthi Herath</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1057,9 +988,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/ragel.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<a href="http://www.ce.pdn.ac.lk/academic-staff/roshan-g-ragel/"><p class="name">Prof. Roshan Ragel</p></a>
-					<span class="position">Professor</span>
+						<p class="name">Prof. Roshan Ragel</p>
+						<span class="position">Professor</span>
 					</div>
 				</a>
 			</div>
@@ -1068,9 +998,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/kamalanath.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<a href="http://www.ce.pdn.ac.lk/academic-staff/kamalanath-samarakoon/"><p class="name">Dr. Kamalanath Samarakoon</p></a>
-					<span class="position">Senior Lecturer and the Head of the Department</span>
+						<p class="name">Dr. Kamalanath Samarakoon</p>
+						<span class="position">Senior Lecturer, Head of the Department</span>
 					</div>
 				</a>
 			</div>
@@ -1079,9 +1008,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/radhakrishnan.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<a href="http://www.ce.pdn.ac.lk/academic-staff/swarnalatha-radhakrishnan/"><p class="name">Dr. Swarnalatha Radhakrishnan</p></a>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Swarnalatha Radhakrishnan</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1090,9 +1018,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/isuru.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Isuru Nawinne</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Isuru Nawinne</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1103,9 +1030,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/asitha.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Asitha Bandaranayake</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Asitha Bandaranayake</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1114,9 +1040,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/namal.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Suneth Namal Karunarathna</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Suneth Namal Karunarathna</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1125,9 +1050,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/dammika.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Dhammika Elkaduwe</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Dhammika Elkaduwe</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1136,9 +1060,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/devapriya.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Shirley Devapriya Dewasurendra</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Shirley Devapriya Dewasurendra</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1169,7 +1092,6 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
 					<p class="name">Mr. Sampath Deegalla</p>
 					<span class="position">Senior Lecturer</span>
 					</div>
@@ -1180,8 +1102,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/maraikar.png)">
 					</div>
 					<div class="text pt-4">
-				<a href="http://www.ce.pdn.ac.lk/Ziyan-Maraikar">	<p class="name">Mr. Ziyan Maraikar</p></a>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Mr. Ziyan Maraikar</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1268,7 +1190,7 @@
 	<div class="col-md">
 		<div class="ftco-footer-widget mb-4">
 			<h2 class="ftco-heading-2">Digital Media Partner</h2>
-	        <a class="navbar-brand" href="https://www.readme.lk/" target="_blank" style="background-color: white">
+	        <a class="navbar-brand" href="https://arteculate.asia/" target="_blank" style="background-color: white">
 	            <img src="img/logo/Arteculate_logo_readme.png" alt="logo" style="width:115px; margin-top: -3px;">
 	        </a>
 		</div>
@@ -1377,61 +1299,5 @@
 		$('.reg_link').css('background-color','red');
 		$('.reg_link a').css('color','white');
 	});
-
-	let mycard= document.getElementById('cardV');
-	let card1= document.getElementById('category1');
-	let card2= document.getElementById('category2');
-	let card3= document.getElementById('category3');
-	let card4= document.getElementById('category4');
-
-	let banner1= document.getElementById('banner1');
-	let banner2= document.getElementById('banner2');
-	let banner3= document.getElementById('banner3');
-	let banner4= document.getElementById('banner4');
-
-	card1.addEventListener('click', ()=>{
-		banner1.classList.replace('inactive', 'active');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('active', 'inactive');
-		card1.classList.replace('bg-primary', 'bg-success');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card2.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('inactive', 'active');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('active', 'inactive');
-		card2.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card3.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('inactive', 'active');
-		banner4.classList.replace('active', 'inactive');
-		card3.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card4.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('inactive', 'active');
-		card4.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-
-	})
 
 </script>
