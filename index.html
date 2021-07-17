@@ -32,40 +32,33 @@
 </head>
 
 <style type="text/css">
-
-
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
-		color: white;
+		color: magenta;
 		font-weight: bold;
 	}
-
 	.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-	    color: red;
+	    color: teal;
 	}
-
   .detail-info{
     border: 2px solid lightskyblue;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
   }
-
   .quetion_icon_tag{
     position: absolute;
     left: 2px;
     top: -14px;
   }
-
   .icon_background{
   	z-index: 1;
     position: absolute;
     left: -50px;
-	top: -10px;
+		top: -10px;
     width: 40px;
     height: 40px;
-
-	justify-content: center;
-	align-items: center;
+		justify-content: center;
+		align-items: center;
   }
   .icon_background span{
 	  position: absolute;
@@ -74,17 +67,12 @@
 	  justify-content: center;
 	  align-items: center;
   }
-
-
   .blog-entry .meta > div a {
     color: white;
    }
   .blog-entry .meta > div a:hover {
     color: white;
    }
-
-
-
    .author_name{
    		display: inline !important;
    }
@@ -94,47 +82,30 @@
     	display: block;
     	text-align: initial;
    }
-
-   
    .leftdiv{
      background-color:skyblue;
      height: auto;
-
-	 left:0;
-
+		 left:0;
    }
    .rightdiv{
-
-
      height: auto;
      right: 0;
    }
-
-  
-
-   
-
 
    /* common styles */
     .inactive{
       display: none;
     }
-
     .active{
       display: flex;
-
     }
-
-
     .visible{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
     }
 
-
     /* overview styles*/
-
 
     /* #about{
       background-color: magenta;
@@ -143,8 +114,7 @@
       box-sizing: border-box;
       box-shadow: 0 5px 10px #ec90e0;
     } */
-   
-   
+
    /* schedule */
    ul.timeline {
      list-style-type: none;
@@ -152,7 +122,6 @@
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
-
    }
    ul.timeline:before {
      content: ' ';
@@ -163,7 +132,6 @@
      margin-left: 20px;
      width: 2px;
      height: 100%;
-
    }
    ul.timeline > li {
      margin: 20px 0;
@@ -181,14 +149,11 @@
      margin-top: -30px;
      width: 20px;
      height: 20px;
-
    }
    ul.timeline > li > p {
      color: blue;
      margin-top: 10px;
    }
-   
-   
    ul.timeline > li > h4 {
      color:red;
      font-size: 24px;
@@ -207,7 +172,6 @@
 		object-fit: cover;
 	}
    .cardimg{
-
 		width: 300px;
 		margin-top: 20px;
 		object-fit: cover;
@@ -215,13 +179,13 @@
 	.overviewimg{
      width: 30%;
 	 height: 30%;
-     
+
    }
 	@media (max-width: 1200px) and (min-width:750px){
 		.overviewimg{
 			width: 20%;
 			height: 20%;
-			
+
 		}
 		.catimg{
 			width: 300px;
@@ -236,7 +200,6 @@
 			object-fit: cover;
 		}
       .cardimg{
-       
        width: 150px;
        margin-top: 10px;
        object-fit: cover;
@@ -244,40 +207,45 @@
 	 .overviewimg{
 			width: 100%;
 			height: 100%;
-			
+
 		}
 	}
-
 
 </style>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="z-index: 500">
 
 <div class="container">
 
 <!-- <a class="navbar-brand" href="index.html">ESCaPe 2020</a> -->
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="oi oi-menu"></span> Menu
 	</button>
 
 	<div class="collapse navbar-collapse" id="ftco-nav">
 
 	<ul class="navbar-nav ml-auto">
-		<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-		<li class="nav-item"><a href="#about" class="nav-link">Overview</a></li>
-		<li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-		<li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
-		<!-- <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li> -->
-		<li class="nav-item"><a href="#committee" class="nav-link">Organizing committee</a></li>
-	</ul>
-
+		<li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+		<li class="nav-item"><a href="#about" class="nav-link text-white">Overview</a></li>
+		<li class="nav-item"><a href="#schedule" class="nav-link text-white">Schedule</a></li>
+		<li class="nav-item"><a href="#speakers" class="nav-link text-white">Speakers</a></li>
+		<li class="nav-item"><a href="#committee" class="nav-link text-white">Organizing committee</a></li>
+  </ul>
 	</div>
 	</div>
 
 </nav>
+    <!-- <script>
+	    window.addEventListener(
+	    'scroll', function (){
+	        // let header = document.querySelector('header');
+	        // let windowPos = window.screenY > 0;
+	        //header.classList.toggle('srolling-active',windowPos);
+	    })
+    </script> -->
 
 <div class="hero-wrap" style="background-image: url('img/home/bg_1.jpg');" data-stellar-background-ratio="0.5">
 
@@ -289,20 +257,24 @@
 		<div class="col-lg-6 col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 
 			<h1 style="color: white;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-				<span style="text-transform: unset;">ESCaPe 2020</span>
-				<br>Engineering Students Conference at Peradeniya 2020
-			</h1>
-			<p style="color: white;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-				<span class="icon-calendar mr-2"></span>29 May 2020 - Zoom Webinar</p>
-				<h1 style="color: white;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                <span style="text-transform: unset; color: white;">ES<span style="text-transform: unset; color: white;">Ca</span>Pe <span style="text-transform: unset; color: white;">20</span>21</span> </h1>
+
+
+
+            <h2> <br><span style="text-transform: unset; color: white;">Engineering Students Conference at
+              </span> <span style="text-transform: unset; color: magenta;">Peradeniya 2021</span>                  </h2>
+
+			<p style=" text-transform: unset;color: teal;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+				<span class="icon-calendar mr-2 "></span>24 July 2021 - Zoom Webinar</p>
+			<!--	<h1 style="color: red;" class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
 					Closed
-				</h1>
-<!-- 			<div id="timer" class="d-flex">
+				</h1>	-->
+			<div id="timer" class="d-flex">
 				<div class="time" id="days"></div>
 				<div class="time pl-3" id="hours"></div>
 				<div class="time pl-3" id="minutes"></div>
 				<div class="time pl-3" id="seconds"></div>
-			</div> -->
+			</div>
 			<br>
 			<!-- <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#call_for_paper_div" style="margin-top:10px;">
 				<span class="time">
@@ -314,20 +286,25 @@
 		<div class="col-lg-2 col"></div>
 		<div class="col-lg-4 col-md-6 mt-0 mt-md-5" style="opacity: 80%;">
 
-		<form class="request-form ftco-animate">
+			<form class="request-form ftco-animate">
 
-			<h2 style="text-decoration: underline;">Registration</h2>
-			<div class="form-group">
-				<p style="text-align: justify;font-size: 16px;color: black;font-weight: bold;">To join with us at ESCaPe 2020 register through the following link:</p>
-				<p class="reg_link" style="background-color: red; font-weight: bold; padding: 10px;border-radius: 4px;">
-					<a href="https://forms.gle/vhq5xgUSJn6xHLH16" target="_blank" style="color: white;">Registration for ESCaPe 2020</a>
-				</p>
-				<p style="text-align: justify;font-size: 16px;margin-top: 30x;color: black;font-weight: bold;">We will continue to update ESCaPe 2020 with more links throughout May! Keep checking back in!</p>
+				<h2 style="text-decoration: underline;">Registration</h2>
+				<div class="form-group">
+					<p style="text-align: justify;font-size: 16px;color: black;font-weight: bold;">To join with us at ESCaPe 2021 register through the following link:</p>
+					<p class="reg_link" style="background-color: red; font-weight: bold; padding: 10px;border-radius: 4px;">
+						<a href="https://bit.ly/ESCaPe2021" target="_blank" rel="noreferrer" style="color: white;">Registration for ESCaPe 2021</a>
+					</p>
+					<p style="text-align: justify;font-size: 16px;margin-top: 30x;color: black;font-weight: bold;">We will continue to update ESCaPe 2021 website! Keep checking back in!</p>
+				</div>
+
+			</form>
+
 			</div>
 
-		</form>
 
-		</div>
+
+
+
 
 		</div>
 	</div>
@@ -335,18 +312,19 @@
 
 <!--about-->
 
-<!--about-->
-<section id="about" class="ftco-section ftco-no-pt ftco-no-pb ">
-
+<section id="about" class="ftco-section ftco-no-pt ftco-no-pb" style="padding: 10px">
 	<div class="container">
 		<div class="row no-gutters">
 		<img src="img/logo/escape-2021-logo.png" class="img-responsive overviewimg col-offset-sm-1 col-sm-10 col-md-5"  style="background-size: contain;">
 		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
 		<div class="heading-section mb-5 pt-5 pl-md-5">
 		<div class="pr-md-5 mr-md-5">
-		<h2 class="mb-4">Overview</h2>
+		<h2 class="mb-4", style="text-transform: unset; color: teal;">Overview</h2>
+
+
+
 		</div>
-		<p style="text-align: justify;">EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. It presents you with the research projects of the undergraduates of the Department of Computer Engineering. ESCaPe 2020 is the 5th symposium that is organized by the department and this time the symposium is open for a broader audience and aims to build a platform for the undergraduates to present their research ideas to the industry and academic community.</p>
+		<p style="text-align: justify;">EscaPe is the annual project symposium of the Department of Computer Engineering, University of Peradeniya. It presents you with the research projects of the undergraduates of the Department of Computer Engineering. ESCaPe 2021 is the 6th symposium that is organized by the department and this time the symposium is open for a broader audience and aims to build a platform for the undergraduates to present their research ideas to the industry and academic community.</p>
 
 		</div>
 		</div>
@@ -358,7 +336,7 @@
 
 
 <section id="categories_div" style="margin-top: 100px; margin-bottom: 100px;">
-	
+
 	<div class="container">
 		<div class="row mb-md-2 mt-4">
 			<div class="col-md-6 d-flex justify-content-center p-5">
@@ -368,17 +346,17 @@
 			<div class="col-md-6 p-md-5">
 				<h2 class="text-primary"><strong>Accelerated AI</strong></h2>
 				<h5 class="text-info">
-					Artificial Intelligence has now become a mainstream technology 
-					in real-world applications and large-scale investments. AI offers 
-					solutions and opportunities for organizations across all sectors 
-					which can accelerate business processes, simplify IT operations and 
-					uncover new insights etc. Every application of AI is attracting the 
-					tech industry and ensuring excellent performance. The main facets which 
-					are accelerating the rate of innovation within the area of Artificial 
-					Intelligence are Advanced computing architecture, Progress in Deep Neural 
-					Networks and Data Analysis performance. Current research and the efforts 
-					in various fields are advancing the innovation in artificial intelligence 
-					and large-scale computing. These trends will make AI technology the most 
+					Artificial Intelligence has now become a mainstream technology
+					in real-world applications and large-scale investments. AI offers
+					solutions and opportunities for organizations across all sectors
+					which can accelerate business processes, simplify IT operations and
+					uncover new insights etc. Every application of AI is attracting the
+					tech industry and ensuring excellent performance. The main facets which
+					are accelerating the rate of innovation within the area of Artificial
+					Intelligence are Advanced computing architecture, Progress in Deep Neural
+					Networks and Data Analysis performance. Current research and the efforts
+					in various fields are advancing the innovation in artificial intelligence
+					and large-scale computing. These trends will make AI technology the most
 					sought-after technology in the market and AI will reach its peak in near future.
 				</h5>
 			</div>
@@ -387,15 +365,15 @@
 			<div class="col-md-6 p-md-5">
 				<h2 class="text-primary"><strong>Data Driven AI</strong></h2>
 				<h5 class="text-info">
-					Artificial Intelligence, especially with machine learning, deep learning and 
-					advanced analytics can automate decision making and insight gathering in the 
-					data-driven world. Identifying patterns within data, based on mathematical and 
-					statistical models and making accurate assumptions over them is very important 
-					in modern science and those results are useful for many fields. By today, Data 
+					Artificial Intelligence, especially with machine learning, deep learning and
+					advanced analytics can automate decision making and insight gathering in the
+					data-driven world. Identifying patterns within data, based on mathematical and
+					statistical models and making accurate assumptions over them is very important
+					in modern science and those results are useful for many fields. By today, Data
 					Driven AI has amplified the value of data many times over.
-					Data Driven AI is becoming more and more a part of the activities traditionally 
-					covered by the engineering data analysis and simulation community. Recent 
-					improvements in the application of AI, machine learning and deep learning, have 
+					Data Driven AI is becoming more and more a part of the activities traditionally
+					covered by the engineering data analysis and simulation community. Recent
+					improvements in the application of AI, machine learning and deep learning, have
 					brought these technologies to the fore in every area of industry.
 
 				</h5>
@@ -428,7 +406,7 @@
 				<div class="col-12">
 					<ul class="timeline text-primary">
 						<li class="bg-white d-flex justify-content-center mb-5">
-							
+
 							<h4 class="mt-4 text-center">Commencement of the conference
 								<div class="col-12 d-flex justify-content-center">
 									<span class="badge badge-fill badge-primary d-flex justify-content-center">08:30 am
@@ -448,7 +426,7 @@
 								</div>
 							</h4><br>
 						</li>
-						
+
 						<li class="bg-white d-flex justify-content-center mb-5">
 							<h4 class="mt-4 text-center">Speech by Prof. Gemunu Herath,<br> Dean, Faculty of Engineering, University of Peradeniya
 								<div class="col-12 d-flex justify-content-center">
@@ -466,7 +444,7 @@
 							</h4><br>
 						</li>
 						<li class="bg-white d-flex justify-content-center mb-5">
-							<h4 class="mt-4 text-center">Keynote speech I by Jeevan Gnanam - CEO of VeracityAI
+							<h4 class="mt-4 text-center">Keynote speech I by Jeevan Gnanam - Founder/Group CEO of VeracityAI
 								<div class="col-12 d-flex justify-content-center">
 									<span class="badge badge-fill badge-primary d-flex justify-content-center">09:05 am
 									</span>
@@ -475,7 +453,7 @@
 						</li>
 
 						<li class="bg-white d-flex justify-content-center">
-						
+
 						<h4 class="mt-4">Student presentations - Session I
 						</h4>
 
@@ -490,63 +468,63 @@
 							</div>
 						</div>
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">07:&nbsp;&nbsp;Accelerating Nanopore DNA Sequencing on FPGAs
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--20:&nbsp;&nbsp;-->Using Near-IR Spectroscopy for Vein Visualization
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">09.35 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">03:&nbsp;&nbsp;Fair and Transparent Machine Learning for Applications with Direct Social Impact
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--12:&nbsp;&nbsp;-->Self Paced Non-motor Imagery Brain Computer Interface for Virtual Object Controlling
 								</a>
 							</div>
 						</div>
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">09:&nbsp;&nbsp;Isolation of genomic regions from skim sequencing data for phylogenetic studies
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--07:&nbsp;&nbsp;-->Accelerating Nanopore DNA Sequencing on FPGAs
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">09.50 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">05:&nbsp;&nbsp;Real-Time Emotion Recognition using Electrocardiogram Analysis
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--21:&nbsp;&nbsp;-->Ensuring Academic Integrity of Online Examination
 								</a>
 							</div>
 						</div>
-					
+
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">14:&nbsp;&nbsp;Mixed reality based simulation platform for swarm robotics
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--16:&nbsp;&nbsp;-->Optimizing Chloroplast Genome Assembly and Annotation with Skim Sequencing Data
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">10.05 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">10:&nbsp;&nbsp;Improved gesture recognition for sEMG based human machine interface
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--05:&nbsp;&nbsp;-->Real-Time Emotion Recognition using Electrocardiogram Analysis
 								</a>
 							</div>
 						</div>
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">18:&nbsp;&nbsp;Applications/Services over wireless SDN
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--08:&nbsp;&nbsp;-->Microservice based Edge Computing Architecture for Internet of Things
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">10.20 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">12:&nbsp;&nbsp;Self Paced Non-motor Imagery Brain Computer Interface For Virtual Object Controlling
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--10:&nbsp;&nbsp;-->Improved Gesture Recognition for sEMG based Human Machine Interface
 								</a>
 							</div>
 						</div>
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">08:&nbsp;&nbsp;Microservice based Edge Computing Architecture for Inernet of Things
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--15:&nbsp;&nbsp;-->Embedded Machine Learning for Real-Time AI Processing at the Edge
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">10.35 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">19:&nbsp;&nbsp;Adaptive people movement and action prediction using CCTV to control appliances
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--19:&nbsp;&nbsp;-->Adaptive People Movement and Action Prediction using CCTV to Control Appliances
 								</a>
 							</div>
 						</div>
 						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">20:&nbsp;&nbsp;Using Near-IR Spectroscopy for Vein visualization
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--14:&nbsp;&nbsp;-->Mixed Reality based Simulation Platform for Swarm Robotics
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">10.50 am</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">21:&nbsp;&nbsp;Ensuring academic integrity of online examinations
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--03:&nbsp;&nbsp;-->Fair and Transparent Machine Learning for Applications with Direct Social Impact
 								</a>
 							</div>
 						</div><br>
@@ -557,21 +535,23 @@
 									</span>
 								</div>
 							</h4><br>
-						</li>	
+						</li>
 						<li class="bg-white d-flex justify-content-center mb-5 row">
-							<h4 class="mt-4 text-center col-12">Panel Discussion with the industry professionals
+							<h4 class="mt-4 text-center col-12">Panel Discussion with the industry professionals - Future of AI in Sri Lanka
 								<div class="col-12 d-flex justify-content-center">
 									<span class="badge badge-fill badge-primary d-flex justify-content-center">11:35 am
 									</span>
 								</div>
 							</h4><br>
 							<ul>
-								<li>Jeevan Gnanam - Founder/Group CEO VeracityAI</li>
-								<li>Thushera Kawdawatta - CEO Axiata Digital Labs</li>
-								<li>Anura de Alwis - Chief Digital Economy Officer ICTA</li>
+								<li>Mr. Jeevan Gnanam - Founder/Group CEO VeracityAI</li>
+								<li>Mr. Thushera Kawdawatta - CEO Axiata Digital Labs</li>
+								<li>Mr. Anura de Alwis - Chief Digital Economy Officer ICTA</li>
 								<li>Dr. Romesh Ranawana - Chairman, <br>Artificial Intelligence (AI) Centre of
 								Excellence (AICx), SLASSCOM</li>
-								<li>Miller Rajendran - CEO at SenzAgro</li>
+								<li>Mr. Miller Rajendran - CEO at SenzAgro</li>
+								<li>Dr. Dhammika Elkaduwa - Senior Lecturer,<br> Department of Computer Engineering,
+ UoP (Moderator)</li>
 							</ul>
 						</li>
 
@@ -584,76 +564,107 @@
 							</h4><br>
 						</li>
 						<li class="bg-white d-flex justify-content-center">
-						
+
 						<h4 class="mt-4 row">Student presentations - Session II
 						</h4>
 
 						<br>
 						</li>
-						<div class="row mb-2">
+						<!--<div class="row mb-2">
 							<div class="col-5 text-center"><a class="col-12 projects"><b>Accelerated AI</b></a>
 							</div>
 							<div class="col-2 d-flex justify-content-center">
 							</div>
 							<div class="col-5 text-center"><a class="col-12 projects"><b>Data Driven AI</b></a>
 							</div>
-						</div>
-						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">06:&nbsp;&nbsp;Optimizing mitochondria genome assembly and annotation with skim sequencing data.
+						</div>-->
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-right"><a class="projects" style="cursor: pointer;"><!--01:&nbsp;&nbsp;-->Identifying Keywords in Legal Articles using ML Techniques
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.05 pm</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">01:&nbsp;&nbsp;Identifying keywords in legal articles using ML techniques
-								</a>
+							<div class="col-5 text-left">
 							</div>
 						</div>
-						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">13:&nbsp;&nbsp;Anonymous and distributed authentication for peer to peer networks
-								</a>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-left">
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.10 pm</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">02:&nbsp;&nbsp;Data Mining system for Selecting a winning Cricket Team
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--04:&nbsp;&nbsp;-->Revealing miRNA Biomarkers for Alzheimer's Disease using Next Generation Sequencing Data
 								</a>
 							</div>
 						</div>
-					
-						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">15:&nbsp;&nbsp;Embedded Machine Learning for Real-Time AI processing at the Edge
+
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-right"><a class="projects" style="cursor: pointer;"><!--02:&nbsp;&nbsp;-->Data Mining System for Selecting a Winning Cricket Team
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.15 pm</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">04:&nbsp;&nbsp;Revealing miRNA biomarkers for Alzheimer's disease using Next Generation Sequencing data
-								</a>
+							<div class="col-5 text-left">
 							</div>
 						</div>
-						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">16:&nbsp;&nbsp;Optimizing chloroplast genome assembly and annotation with skim sequencing data
-								</a>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-left">
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.20 pm</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">11:&nbsp;&nbsp;AI powered Player Technique Evaluation for Weightlifting
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--09:&nbsp;&nbsp;-->Isolation of Genomic Regions from Skim Sequencing Data for Phylogenetic Studies
 								</a>
 							</div>
 						</div>
-						<div class="row mt-2 mb-2">
-							<div class="col-5 text-left"><a class="projects" style="color: white">&nbsp;&nbsp;
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-right"><a class="projects" style="cursor: pointer;"><!--06:&nbsp;&nbsp;-->Optimizing Mitochondria Genome Assembly and Annotation with Skim Sequencing Data
 								</a>
 							</div>
 							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.25 pm</span>
 							</div>
-							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;">17:&nbsp;&nbsp;Doppelgänger Cartoon
+							<div class="col-5 text-left">
+							</div>
+						</div>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-left">
+							</div>
+							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.30 pm</span>
+							</div>
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--13:&nbsp;&nbsp;-->Anonymous and Distributed Authentication for Peer to Peer Networks
 								</a>
+							</div>
+						</div>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-right"><a class="projects" style="cursor: pointer;"><!--18:&nbsp;&nbsp;-->Applications/Services over Wireless SDN
+								</a>
+							</div>
+							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.35 pm</span>
+							</div>
+							<div class="col-5 text-left">
+							</div>
+						</div>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-left">
+							</div>
+							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.40 pm</span>
+							</div>
+							<div class="col-5 text-left"><a class="projects" style="cursor: pointer;"><!--11:&nbsp;&nbsp;-->AI Powered Player Technique Evaluation for Weightlifting
+								</a>
+							</div>
+						</div>
+						<div class="row mt-1 mb-1">
+							<div class="col-5 text-right"><a class="projects" style="cursor: pointer;"><!--17:&nbsp;&nbsp;-->Doppelgänger Cartoon
+								</a>
+							</div>
+							<div class="col-2 d-flex justify-content-center align-items-center"><span class="badge badge-fill badge-primary projects pl-3 pr-3" style="color: #fff;">01.45 pm</span>
+							</div>
+							<div class="col-5 text-left">
 							</div>
 						</div>
 						<br>
 						<li class="bg-white d-flex justify-content-center mb-5">
 							<h4 class="mt-4 text-center">Awards for the Best Research Article and Best Presentation
 								<div class="col-12 d-flex justify-content-center">
-									<span class="badge badge-fill badge-primary d-flex justify-content-center">01:30 pm
+									<span class="badge badge-fill badge-primary d-flex justify-content-center">01:50 pm
 									</span>
 								</div>
 							</h4><br>
@@ -661,7 +672,7 @@
 						<li class="bg-white d-flex justify-content-center mb-5">
 							<h4 class="mt-4 text-center">Vote of Thanks
 								<div class="col-12 d-flex justify-content-center">
-									<span class="badge badge-fill badge-primary d-flex justify-content-center">01:45 pm
+									<span class="badge badge-fill badge-primary d-flex justify-content-center">02:10 pm
 									</span>
 								</div>
 							</h4><br>
@@ -669,7 +680,7 @@
 						<li class="bg-white d-flex justify-content-center mb-5">
 							<h4 class="mt-4 text-center">End of the Conference
 								<div class="col-12 d-flex justify-content-center">
-									<span class="badge badge-fill badge-primary d-flex justify-content-center">02:00 pm
+									<span class="badge badge-fill badge-primary d-flex justify-content-center">02:30 pm
 									</span>
 								</div>
 							</h4><br>
@@ -678,12 +689,12 @@
 
 						</ul>
 						</div>
-					</div>						
+					</div>
             	</ul>
-				
+
 			</div>
 		</div>
-	</div>   
+	</div>
 </div>
 
 </section>
@@ -691,83 +702,104 @@
 <!--speakers-->
 <section id="speakers" class="ftco-section ftco-no-pt ftco-no-pb">
 
-	<div class="container mb-5">
-	<div class="row justify-content-center mb-5">
-		<div class="col-md-7 text-center heading-section ftco-animate">
-			<h2 class="mb-1">Keynote Speakers</h2>
+	<div class="row justify-content-center">
+
+	<div class="col-12 d-flex justify-content-center mb-5">
+
+				<h2 class="mb-3 text-center">Keynote speakers</h2>
+
 		</div>
-	</div>
-	<div class="row no-gutters detail-info">
-		<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/speakers/mano_sekram.jpg);">
+
+
+
+
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card col-sm-10 col-md-6 col-lg-8 col-xl-5 border-1">
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 col-md-6">
+          <img src="img/speakers/mr_jeevan.jpeg" alt="mr_jeevan"  align="center" class="center">
+        </div>
+    </div>
+
+    	<div class="speaker ftco-animate speaker-1 align-items-center mb-5">
+			<div class="text pl-4">
+				<h1>Mr. Jeevan Gnanam</h1>
+				<span class="position">Founder / Group CEO of VeracityAI</span>
+				<!-- <p>A small river named Duden flows by their place and supplies</p> -->
+				<ul class="ftco-social">
+					<li><a href="https://lk.linkedin.com/in/jeevangnanam/" target="_blank" rel="noreferrer"><span class="icon-linkedin"></span></a></li>
+					<li><a href="https://twitter.com/jeevs/" target="_blank" rel="noreferrer"><span class="icon-twitter"></span></a></li>
+					<!-- <li><a href="https://www.facebook.com/mano.sekaram" target="_blank"><span class="icon-facebook"></span></a></li> -->
+				</ul>
+			</div>
 		</div>
-		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
-			<div class="heading-section mb-5 pt-5 pl-md-5">
-				<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+
+    	<p style="text-align: justify; padding: 5px">
+			Mr.Jeevan Gnanam is the founder and Group CEO of VeracityAI.  He is a data science & AI enthusiast, an entrepreneurial idea generator, a mentor, and a facilitator for entrepreneurial development for youth in Sri Lanka. He is the Chief Executive Officer and Executive Director at St.Anthony's Industries Group which is one of the oldest and largest conglomerates for manufacturing textiles, building materials, plastic products, industrial fasteners, cement, fiber cement and corrugated roofing sheets.
+		</p>
+    	<p style="text-align: justify; padding: 5px">
+			Mr.Jeevan Gnanam also serves as the CEO of Anton which is one of the largest plastic manufacturers in the country. His commitment has led Anton to many firsts in plastics manufacturing in Sri Lanka. Mr. Jeevan is also a co-founder of Providence which has now grown to include Providence BPO.
+		</p>
+    	<p style="text-align: justify; padding: 5px">
+			He is a founder member of the Lanka Angel Network, which is targeting to support  Sri Lankan entrepreneurs and companies to grow by providing venture capital and mentorship.
+		</p>
+    	<p style="text-align: justify; padding: 5px">
+			He is also the immediate past chairman of SLASSCOM, which is the national chamber for the IT/BPM industry in Sri Lanka. Mr. Jeevan is the visionary behind Sri Lanka's first premier operational IT park, Orion City and his leadership encompasses HATCH Sri Lanka, SAKS, OrionStellar.
+		</p>
+		</div>
+		<br>
+
+
+
+
+           <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="card col-sm-10 col-md-6 col-lg-8 col-xl-5 border-1">
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-10 col-md-6">
+         <img src="img/speakers/mr_thuesera.jpeg" alt="mr_thuesera" align="center" class="center">
+        </div>
+    </div>
+
+
+    	<div class="speaker ftco-animate speaker-1 align-items-center mb-5">
 					<div class="text pl-4">
-						<h3>Mr. Mano Sekaram</h3>
-						<span class="position">CEO and Co -Founder at 99X Technology and Founder at Startup X Foundry</span>
+						<h1>Mr. Thushera Kawdawatta</h1>
+						<span class="position">CEO of Axiata Digital Labs</span>
 						<!-- <p>A small river named Duden flows by their place and supplies</p> -->
 						<ul class="ftco-social">
-							<li><a href="https://www.linkedin.com/in/manosekaram/" target="_blank"><span class="icon-linkedin"></span></a></li>
-							<li><a href="https://twitter.com/manoseky" target="_blank"><span class="icon-twitter"></span></a></li>
-							<li><a href="https://www.facebook.com/mano.sekaram" target="_blank"><span class="icon-facebook"></span></a></li>
+							<!-- <li><a href="https://lk.linkedin.com/in/jeevangnanam/" target="_blank" rel="noreferrer"><span class="icon-linkedin"></span></a></li>
+							<li><a href="https://twitter.com/jeevs/" target="_blank" rel="noreferrer"><span class="icon-twitter"></span></a></li> -->
+							<li><a href="https://www.facebook.com/thushera" target="_blank"><span class="icon-facebook"></span></a></li>
 						</ul>
 					</div>
 				</div>
-				<p style="text-align: justify;">Mano Sekaram is a serial tech entrepreneur and is the Chief Executive Officer (CEO) and Co-Founder of 99X Technology Ltd., an award-winning, high-quality digital product engineering company that specialises in delivering digital services to European markets. This company, under his stewardship, has been listed among the top 25 ‘Best Companies To Work For’ in Sri Lanka for seven consecutive years and has also been ranked among ‘Asia’s Best Workplaces’ for 2019.</p>
-			</div>
-		</div>
 
-		<p style="text-align: justify;margin-top: 15px;">He is also the founder of Startup X Foundry, one of Sri Lanka’s first tech start-up accelerators, which aims at taking Sri Lankan start-ups to the global stage by providing necessary guidance and support. He further influences Sri Lanka’s start-up ecosystem through the Lankan Angel Network (LAN), of which he is Chairman.</p>
-		<p style="text-align: justify;">Mano was appointed recently to the Board of the Information and Communication Technology Agency (ICTA) of Sri Lanka, which drives Sri Lanka’s digital transformation strategy as a catalyst for economic growth. He is also the past Chairman of the IT/BPM sector’s apex body, the Sri Lanka Association of Software and Service Companies (SLASSCOM).</p>
-		<p style="text-align: justify;">He was listed on LMD’s 100 Club for 2019, the A-List of Sri Lankan businesspeople who continue to drive the nation’s engine of growth.</p>
-		<p style="text-align: justify;">Considered to be an industry thought leader, Mano was awarded the ‘Lifetime Achievement Award’ at the National Best Quality Software Awards (NBQSA) 2014, by BCS, The Chartered Institute for IT, for his vast contributions to the ICT industry.</p>
-	</div>
-	<br>
-	<div class="row no-gutters detail-info">
-		<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/speakers/pandu_ragan.jpg);">
-		</div>
-		<div class="col-md-7 wrap-about py-md-5 ftco-animate">
-			<div class="heading-section mb-5 pt-5 pl-md-5">
-				<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
-					<div class="text pl-4">
-						<h3>Prof. C. Pandu Rangan</h3>
-						<span class="position">Professor at Department of Computer Science & Engineering, Indian Institute of Technology Madras, India</span>
-						<!-- <p>A small river named Duden flows by their place and supplies</p> -->
-<!-- 						<ul class="ftco-social">
-							<li><a href="https://www.linkedin.com/in/manosekaram/" target="_blank"><span class="icon-linkedin"></span></a></li>
-							<li><a href="https://twitter.com/manoseky" target="_blank"><span class="icon-twitter"></span></a></li>
-							<li><a href="https://www.facebook.com/mano.sekaram" target="_blank"><span class="icon-facebook"></span></a></li>
-						</ul> -->
-					</div>
-				</div>
-				<p style="text-align: justify;">Prof. C. Pandu Rangan is a Professor  of the Computer Science and Engineering Department at Indian Institute of Technology - Madras (IITM), India. Prof. C. Pandu Rangan has published over two hundred research papers in the following areas of Computer Science and Engineering:</p>
-				<div class="row">
-					<div class="col-md-6" style="display: inline;">
-		              <ul style="list-style-type: square; text-align: justify;display: inline;">
-		                <li>Restricting the problem domain</li>
-		                <li>Approximate algorithm design</li>
-		                <li>Randomized Algorithms</li>
-		              </ul>
-					</div>
-					<div class="col-md-6" style="display: inline;">
-		              <ul style="list-style-type: square; text-align: justify;display: inline;">
-		                <li>Parallel and VLSI Algorithms</li>
-		                <li>Applied Cryptography</li>
-		                <li>Secure Multi-Part Computation</li>
-		                <li>Game Theory and Graph Theory</li>
-		              </ul>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<p style="text-align: justify;margin-top: 15px;">His main research focus is on the design of pragmatic algorithms. He is interested in looking for pragmatic alternatives for the problems of practical interest in Graph Theory, Combinatorics, and Computational Geometry.</p>
-		<p style="text-align: justify;">He obtained his MSc from the University of Madras in 1977 and completed his Ph.D. from the Indian Institute of Science, Bangalore, India in the year 1984.</p>
-		<p style="text-align: justify;">He was awarded the Fellowship, Indian National Academy of Engineering in 2006. He also acted as a member of the board of directors in the International Association for Cryptologic Research (IACR) from 2002 - 2005. He was a member of the board of directors in the Society for Electronic Transaction and Security (SETS) from 2005 - 2007. He was in the editorial board for Lecture Notes in Computer Science Series (LNCS Series), Springer-Verlag, Germany, from 2005 - 2011, and for the Journal of Parallel and Distributed Computing during 2005 -2007. In recognition for professors "who have distinguished themselves and been recognized by their peers for their research and/or technology development, and who have excelled in teaching and service to the institute/nation/profession” Prof. C. Pandu Rangan has been awarded the Institute Chair Professor at IIT Madras in the year  2018.</p>
+
+    <p style="text-align: justify; padding: 5px">
+		Mr. Thushera Kawdawatta is the Chief Executive Officer at Axiata Digital Labs which is an innovative software service provider, offering telco-focused digital and IT services and solutions through successful digital transformation.
+	</p>
+    <p style="text-align: justify; padding: 5px">
+		He is a tech enthusiast leader with accountability and responsibility in software delivery quality and specialized in Software architecture, Engineering management, and process improvement.
+	</p>
+    <p style="text-align: justify; padding: 5px">
+		Over 24 years of experience in the industry have led him to be a people-oriented leader who thoroughly enjoys his work. Initially, he spent over 19 years at Virtusa as the Chief Software Architect contributing to software product development. During his years, Virtusa won the 2012 WITSA Global ICT Excellence Award for its Àkura School Management System. And also he was awarded for best Productivity software of the year 1999.
+	</p>
+    <p style="text-align: justify; padding: 5px">
+		With his extensive experience, Mr. Thushera Kawdawatta has been working on over 100 software projects across numerous reputed global enterprises over the past few years while launching many IT initiatives. Mr. Thushera was appointed as a board member of CSSL, and a member of the parliament select committee on AI standards of Sri Lanka.
+	</p>
+
+</div>
+
+
 	</div>
-	</div>
-	</div>
+
 
 </section>
 
@@ -887,7 +919,8 @@
 </div> -->
 
 <!--Comitee-->
-<section id="committee" class="ftco-section testimony-section ftco-no-pt">
+<!--Comitee-->
+<section id="committee" class="ftco-section testimony-section ftco-no-pt mt-5">
 
 	<div class="container">
 		<div class="row justify-content-center mb-5">
@@ -907,13 +940,11 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/upul.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Upul Jayasinghe</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Upul Jayasinghe</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-2"></div>
 		</div>
 	 	<div class="row justify-content-center mb-5">
 			<div class="col-md-7 text-center heading-section ftco-animate">
@@ -926,9 +957,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/janaka.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Janaka Alwathugoda</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Janaka Alwathugoda</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -937,9 +967,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/damayanthi.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Damayanthi Herath</p>
-					<span class="position">Lecturer</span>
+						<p class="name">Dr. Damayanthi Herath</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -955,9 +984,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/ragel.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Prof. Roshan Ragel</p>
-					<span class="position">Professor</span>
+						<p class="name">Prof. Roshan Ragel</p>
+						<span class="position">Professor</span>
 					</div>
 				</a>
 			</div>
@@ -966,9 +994,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/kamalanath.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Kamalanath Samarakoon</p>
-					<span class="position">Senior Lecturer and the Head of the Department</span>
+						<p class="name">Dr. Kamalanath Samarakoon</p>
+						<span class="position">Senior Lecturer, Head of the Department</span>
 					</div>
 				</a>
 			</div>
@@ -977,9 +1004,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/radhakrishnan.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Swarnalatha Radhakrishnan</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Swarnalatha Radhakrishnan</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -988,9 +1014,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/isuru.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Isuru Nawinne</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Isuru Nawinne</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1001,9 +1026,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/asitha.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Asitha Bandaranayake</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Asitha Bandaranayake</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1012,9 +1036,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/namal.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Suneth Namal Karunarathna</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Suneth Namal Karunarathna</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1023,9 +1046,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/dammika.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Dhammika Elkaduwe</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Dhammika Elkaduwe</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1034,9 +1056,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/devapriya.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-					<p class="name">Dr. Shirley Devapriya Dewasurendra</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Dr. Shirley Devapriya Dewasurendra</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1067,7 +1088,6 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
 					</div>
 					<div class="text pt-4">
-					<!-- <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
 					<p class="name">Mr. Sampath Deegalla</p>
 					<span class="position">Senior Lecturer</span>
 					</div>
@@ -1078,8 +1098,8 @@
 					<div class="user-img mb-4" style="background-image: url(img/committee/maraikar.png)">
 					</div>
 					<div class="text pt-4">
-					<p class="name">Mr. Ziyan Maraikar</p>
-					<span class="position">Senior Lecturer</span>
+						<p class="name">Mr. Ziyan Maraikar</p>
+						<span class="position">Senior Lecturer</span>
 					</div>
 				</a>
 			</div>
@@ -1092,7 +1112,7 @@
 		<div class="row">
 			<div class="col-md-3">
 				<div class="testimony-wrap text-center py-4 pb-5">
-					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
+					<div class="user-img mb-4" style="background-image: url(img/committee/president.jpg)">
 					</div>
 					<div class="text pt-4">
 						<p class="name">Malitha Liyanage</p>
@@ -1102,7 +1122,7 @@
 			</div>
 			<div class="col-md-3">
 				<div class="testimony-wrap text-center py-4 pb-5">
-					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
+					<div class="user-img mb-4" style="background-image: url(img/committee/secretary.png)">
 					</div>
 					<div class="text pt-4">
 						<p class="name">Hashan Eranga</p>
@@ -1112,7 +1132,7 @@
 			</div>
 			<div class="col-md-3">
 				<div class="testimony-wrap text-center py-4 pb-5">
-					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
+					<div class="user-img mb-4" style="background-image: url(img/committee/vice-president.jpg)">
 					</div>
 					<div class="text pt-4">
 						<p class="name">Devin Gallage</p>
@@ -1122,7 +1142,7 @@
 			</div>
 			<div class="col-md-3">
 				<div class="testimony-wrap text-center py-4 pb-5">
-					<div class="user-img mb-4" style="background-image: url(img/committee/deegalla.jpg)">
+					<div class="user-img mb-4" style="background-image: url(img/committee/editor.jpg)">
 					</div>
 					<div class="text pt-4">
 						<p class="name">Kshithija Dilhani</p>
@@ -1134,6 +1154,7 @@
 	</div>
 
 </section>
+
 
 <!--gallery-->
 <section class="ftco-section testimony-section ftco-no-pt" style="display: none;">
@@ -1165,8 +1186,8 @@
 	<div class="col-md">
 		<div class="ftco-footer-widget mb-4">
 			<h2 class="ftco-heading-2">Digital Media Partner</h2>
-	        <a class="navbar-brand" href="https://www.readme.lk/" target="_blank" style="background-color: white">
-	            <img src="img/logo/logo_1.png" alt="logo" style="width:115px; margin-top: -3px;">
+	        <a class="navbar-brand" href="https://arteculate.asia/" target="_blank" style="background-color: white">
+	            <img src="img/logo/Arteculate_logo_readme.png" alt="logo" style="width:115px; margin-top: -3px;">
 	        </a>
 		</div>
 		<div class="ftco-footer-widget mb-4 mt-4">
@@ -1208,7 +1229,7 @@
 					</li>
 					<li>
 						<a><span class="icon icon-phone"></span>
-							<span class="text">+94 71 5541 513</span>
+							<span class="text">+9476 969 5057</span>
 						</a>
 					</li>
 					<li>
@@ -1257,7 +1278,7 @@
 <script src="js/scrollax.min.js"></script>
 
 <script src="js/main.js"></script>
-<script src="js/scroll_nav.js"></script>
+<!--<script src="js/scroll_nav.js"></script>-->
 
 <script src="js/project_data.js"></script>
 <script src="js/baguetteBox.js" async></script>
@@ -1274,61 +1295,5 @@
 		$('.reg_link').css('background-color','red');
 		$('.reg_link a').css('color','white');
 	});
-
-	let mycard= document.getElementById('cardV');
-	let card1= document.getElementById('category1');
-	let card2= document.getElementById('category2');
-	let card3= document.getElementById('category3');
-	let card4= document.getElementById('category4');
-
-	let banner1= document.getElementById('banner1');
-	let banner2= document.getElementById('banner2');
-	let banner3= document.getElementById('banner3');
-	let banner4= document.getElementById('banner4');
-
-	card1.addEventListener('click', ()=>{
-		banner1.classList.replace('inactive', 'active');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('active', 'inactive');
-		card1.classList.replace('bg-primary', 'bg-success');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card2.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('inactive', 'active');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('active', 'inactive');
-		card2.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card3.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('inactive', 'active');
-		banner4.classList.replace('active', 'inactive');
-		card3.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card4.classList.replace('bg-success', 'bg-primary');
-
-	})
-	card4.addEventListener('click', ()=>{
-		banner1.classList.replace('active', 'inactive');
-		banner2.classList.replace('active', 'inactive');
-		banner3.classList.replace('active', 'inactive');
-		banner4.classList.replace('inactive', 'active');
-		card4.classList.replace('bg-primary', 'bg-success');
-		card1.classList.replace('bg-success', 'bg-primary');
-		card2.classList.replace('bg-success', 'bg-primary');
-		card3.classList.replace('bg-success', 'bg-primary');
-
-	})
 
 </script>
