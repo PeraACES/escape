@@ -9754,3 +9754,13 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  @media(max-width:500px){
+    .mobile-schedule-title {
+      font-size: 16px !important;
+    }
+
+    .mobile-schedule-badge {
+      font-size: 10px !important;
+    }
+  }
